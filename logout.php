@@ -1,9 +1,11 @@
 <?php
 session_start();
-//destroying all the session
+
+//destroying the session
 if(session_destroy())
 {
 	header("Location: index.php");
-	//redirect ke main page
+	//redirect to main page
 }
+
 ?>
