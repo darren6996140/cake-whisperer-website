@@ -1,12 +1,6 @@
 <html>
 <head>
 <style>
-/* IMG */
-#img{
-	max-width: 100%;
-	height: auto;
-}
-
 /* Content Main */
 #main{
 	text-align: center;
@@ -22,10 +16,13 @@
 
 
 <div id="main">
-	<h1><center>SELAMAT DATANG</center></h1>
-	<center><img src="images/cinema.jpg" id="img" width="800px" height="450px"></center>
-	<p>Green Screen Theaters merupakan pawagam terbaharu yang paling dekat di tempat kediaman anda, ia mempunyai sebanyak 5 dewan pawagam yang dipasang pendingin hawa demi keselesaan anda. Harga tiket wayang dijual dari RM 7 dan terdapat diskaun lebih bagi keluarga dan murid.</p>
 
+	<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae nostrum ab facere vitae molestias ullam asperiores iste, magnam laboriosam excepturi aliquid eaque earum aliquam quidem illum? Magni, eaque est.
+	</div> <br>
+
+	<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam harum doloribus illo numquam provident accusantium cumque quibusdam. Facilis deserunt dignissimos ipsam necessitatibus nihil repudiandae minus blanditiis reiciendis animi architecto!</div> <br>
+
+	<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam harum doloribus illo numquam provident accusantium cumque quibusdam. Facilis deserunt dignissimos ipsam necessitatibus nihil repudiandae minus blanditiis reiciendis animi architecto!</div> <br>
 </div>
 
 </body>
