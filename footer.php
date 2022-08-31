@@ -14,7 +14,7 @@
 	background: white;
 	display: flex;
 	font-family: andale mono, monospace;
-	border-radius: 5px;
+	border-radius: 8px;
 	font-size: 100%;
 	padding:3px;
 }
