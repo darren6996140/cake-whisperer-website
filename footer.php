@@ -18,27 +18,27 @@
 	padding:3px;
 }
 
-.left{
+.footer .left{
 	text-align: left;
 	flex: 50%;
 }
 
-.right{
+.footer .right{
 	text-align: right;
 	flex: 50%;
 }
 
-.right .links{
+.footer .right .links{
 	width: 25px;
 	height: 25px;
 	padding-right: 10px;
 }
 
-.right a{
+.footer .right a{
 	color: rgba(0, 0, 0, 0);
 }
 
-.left p{
+.footer .left p{
 	padding-left: 10px;
 	padding-top: 5px;
 }
