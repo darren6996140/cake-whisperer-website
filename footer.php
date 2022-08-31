@@ -62,11 +62,11 @@
 	<div class="right">
 		<p>
 		<a href="https://www.youtube.com/watch?v=2942BB1JXFk"> <img class="links" src="images/ds.png" alt="Discord Server"> </a>
-		<a href="https://www.youtube.com/watch?v=2942BB1JXFk"> <img class="links" src="images/fb.png" alt="Facebook Page"> </a>
-		<a href="https://www.youtube.com/watch?v=2942BB1JXFk"> <img class="links" src="images/ig.png" alt="Instagram Page"> </a>
-		<a href="https://www.youtube.com/watch?v=2942BB1JXFk"> <img class="links" src="images/tw.png" alt="Twitter Page"> </a>
-		<a href="https://www.youtube.com/watch?v=2942BB1JXFk"> <img class="links" src="images/ws.png" alt="WhatsApp"> </a>
-		<a href="https://www.youtube.com/watch?v=2942BB1JXFk"> <img class="links" src="images/yt.png" alt="YouTube Channel"> </a>
+		<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"> <img class="links" src="images/fb.png" alt="Facebook Page"> </a>
+		<a href="https://www.youtube.com/watch?v=G8iEMVr7GFg"> <img class="links" src="images/ig.png" alt="Instagram Page"> </a>
+		<a href="https://www.youtube.com/watch?v=epyRUp0BhrA"> <img class="links" src="images/tw.png" alt="Twitter Page"> </a>
+		<a href="https://www.youtube.com/watch?v=ptw2FLKXDQE"> <img class="links" src="images/ws.png" alt="WhatsApp"> </a>
+		<a href="https://www.youtube.com/watch?v=TzXXHVhGXTQ"> <img class="links" src="images/yt.png" alt="YouTube Channel"> </a>
 		</p>
 	</div>
 </div>
