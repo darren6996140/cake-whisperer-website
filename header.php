@@ -23,7 +23,7 @@
 			display: flex;
 			font-family: andale mono, monospace;
 			font-size: 170%;
-			background: black;
+			background: rgb(0, 72, 106);
 			text-align: center;
 			transition: 0.5s;
 			border-radius: 8px;
@@ -45,19 +45,16 @@
 			flex: 6%;
 			font-size: 170%;
 	  		cursor: pointer;
-  			background-color: black;
+  			background-color: rgb(0, 72, 106);
   			color: white;
-  			padding-top: 30px;
-			padding-right: 25px;
-			padding-bottom: 30px;
-			padding-left: 15px;
+			padding: 30px 25px 30px 15px;
 			border-radius: 8px;
 		}
 
 		.header .open {
 			font-size: 170%;
 	  		cursor: pointer;
-  			background-color: black;
+  			background-color: rgb(0, 72, 106);
   			color: white;
   			padding: 30px 15px;
   			border: none;
@@ -70,11 +67,10 @@
 
 		.sidebar {
 			height: 100%;
-			width: 0;
 			position: fixed;
 			top: 0;
 			left: 0;
-			background-color: gainsboro;
+			background-color: rgb(235, 235, 235);
 			overflow-x: hidden;
 			transition: 0.5s;
 			padding-top: 60px;
@@ -82,7 +78,7 @@
 
 		.sidebar a {
 			padding: 8px 8px 8px 30px;
-			font-size: 24px;
+			font-size: 170%;
 			display: block;
 			transition: 0.5s;
 			cursor: pointer;
@@ -93,16 +89,17 @@
 			position: absolute;
 			top: 0;
 			right: 15px;
-			font-size: 36px;
+			font-size: 250%;
 			transition: 0.5s;
 			cursor: pointer;
-			background-color: gainsboro;
+			background-color: rgb(235, 235, 235);
   			color: black;
 			border: none;
+			padding: 10px 0px;
 		}
 
 		.sidebar a{
-			color:black;
+			color: rgba(75, 171, 255);
 			text-decoration: underline;
 		}
 
