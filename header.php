@@ -31,18 +31,19 @@
 
 		.header #left
 		{
-			flex: 8%;
+			flex: 9%;
 		}
 
 		.header #center
 		{
-			flex: 90%;
+			flex: 82%;
 			color: white;
+			border-radius: 8px;
 		}
 
 		.header #right
 		{
-			flex: 6%;
+			flex: 9%;
 			font-size: 170%;
 	  		cursor: pointer;
   			background-color: rgb(0, 72, 106);
@@ -58,6 +59,7 @@
   			color: white;
   			padding: 30px 15px;
   			border: none;
+			border-radius: 8px;
 		}
 
 		.header .login{
@@ -75,6 +77,7 @@
 			overflow-x: hidden;
 			transition: 0.5s;
 			padding-top: 60px;
+			z-index: 1;
 		}
 
 		.sidebar a {
