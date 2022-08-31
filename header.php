@@ -12,9 +12,9 @@
 
 	<style>
 
-		 body 
+		body
 		{
-			background: GainsBoro;
+			background: rgb(235, 235, 235);
 			padding: 10px;
 		} 
 
@@ -26,28 +26,46 @@
 			background: black;
 			text-align: center;
 			transition: 0.5s;
+			border-radius: 8px;
 		}
 
-		#left
+		.header #left
 		{
 			flex: 8%;
 		}
 
-		#center
+		.header #center
 		{
 			flex: 90%;
 			color: white;
 		}
 
-		#right
+		.header #right
 		{
-			flex: 5%;
+			flex: 6%;
+			font-size: 170%;
+	  		cursor: pointer;
+  			background-color: black;
+  			color: white;
+  			padding-top: 30px;
+			padding-right: 25px;
+			padding-bottom: 30px;
+			padding-left: 15px;
+			border-radius: 8px;
+		}
+
+		.header .open {
 			font-size: 170%;
 	  		cursor: pointer;
   			background-color: black;
   			color: white;
   			padding: 30px 15px;
   			border: none;
+		}
+
+		.header .login{
+			color: rgb(75, 171, 255);
+			text-decoration: underline;
 		}
 
 		.sidebar {
@@ -83,26 +101,8 @@
 			border: none;
 		}
 
-		.open {
-			font-size: 170%;
-	  		cursor: pointer;
-  			background-color: black;
-  			color: white;
-  			padding: 30px 15px;
-  			border: none;
-		}
-
-		#main {
-			transition: margin-left .5s;
-		}
-
 		.sidebar a{
 			color:black;
-			text-decoration: underline;
-		}
-
-		.login{
-			color: rgb(75, 171, 255);
 			text-decoration: underline;
 		}
 
@@ -111,27 +111,27 @@
   			.sidebar a {font-size: 18px;}
 			.sidebar .close{font-size: 25px;}
 			.header {font-size: 130%;}
-	}
+		}
 
-	.open:hover{
-		color: rgba(220, 220, 220, 0.700);
-		transition: 0.2s;
-	}
+		.open:hover{
+			color: rgba(220, 220, 220, 0.700);
+			transition: 0.2s;
+		}
 
-	.close:hover{
-		color: rgba(0, 0, 0, 0.500);
-		transition: 0.2s;
-	}
+		.close:hover{
+			color: rgba(0, 0, 0, 0.500);
+			transition: 0.2s;
+		}
 
-	.login:hover{
-		color: rgba(75, 171, 255, 0.75);
-		transition: 0.2s;
-	}
+		.login:hover{
+			color: rgba(75, 171, 255, 0.75);
+			transition: 0.2s;
+		}
 
-	.sidebar a:hover{
-		color: rgba(0, 0, 0, 0.500);
-		transition: 0.2s;
-	}
+		.sidebar a:hover{
+			color: rgba(0, 0, 0, 0.500);
+			transition: 0.2s;
+		}
 
 	</style>
 
@@ -162,9 +162,6 @@
 
 </div>
 
-<div id="main">
-</div>
-
 <script>
 	function openNav() {
 		document.getElementById("sidebar").style.width = "20%";
@@ -178,5 +175,7 @@
 
 	</script>
 	
+	<br> 
+
 </body>
 </html>
