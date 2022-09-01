@@ -85,7 +85,7 @@
 			background-color: rgb(113, 113, 113);
 		}
 
-		.imgSlides:hover .slideOverlay , .imgCourses:hover .courseOverlay{
+		.imgSlides:hover .slideOverlay , .imgCourses:hover .coursesOverlay{
 			opacity: 1;
 		}
 
@@ -114,10 +114,9 @@
 		}
 
 		.coursesOverlay {
-			display: block;
 			position: absolute;
-			height: 95%;
-			width: 100%;
+			height: 110%;
+			width: 33.33%;
 			opacity: 0;
 			transition: 0.5s ease;
 			background-color: rgba(255, 255, 255, 0.6);
@@ -126,10 +125,10 @@
 
 		.coursesOverlay .coursesText {
 			color: black;
-			font-size: 200%;
+			font-size: 100%;
 			position: absolute;
-			top: 100%;
-			left: 100%;
+			top: 50%;
+			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
@@ -160,7 +159,6 @@
 
 		.coursesContainer img{
 			flex: 33.33%;
-			width: 33.33%
 		}
 
 	</style>
@@ -231,11 +229,14 @@
 
 	</div>
 
+	<br>
+
 	<div class="coursesContainer">
 		<div class="imgCourses">
 			<a href="">
-			<div class="courseOverlay">
+			<div class="coursesOverlay">
     			<div class="coursesText">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!
 				</div>
   			</div>
 			</a><br>
@@ -243,8 +244,9 @@
 		</div>
 		<div class="imgCourses">
 			<a href="">
-			<div class="courseOverlay">
+			<div class="coursesOverlay">
     			<div class="coursesText">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat eius eligendi, natus expedita fugiat, necessitatibus, harum ipsum corporis illum sequi soluta. Necessitatibus architecto nobis facilis molestiae sit harum dolorem!
 				</div>
   			</div>
 			</a><br>
@@ -252,14 +254,17 @@
 		</div>
 		<div class="imgCourses">
 			<a href="">
-			<div class="courseOverlay">
+			<div class="coursesOverlay">
     			<div class="coursesText">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat expedita explicabo modi aut officiis, perferendis nemo officia impedit amet quia, delectus, cum voluptatem eveniet? Ab cupiditate laudantium obcaecati totam aliquid.
 				</div>
   			</div>
 			</a><br>
 			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
 		</div>
 	</div>
+
+	<br>
 
 	<script>
 		let slideIndex = 1;
