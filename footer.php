@@ -17,6 +17,7 @@
 	border-radius: 8px;
 	font-size: 100%;
 	padding:3px;
+	transition: 0.5s;
 }
 
 /* style left portion of footer */
@@ -48,6 +49,11 @@
 	padding-left: 10px;
 	padding-top: 5px;
 }
+
+/* needs some help
+.footer .right .links:hover{
+	background-color: rgba(0, 72, 106, 0.1);
+} */
 
 </style>
 </head>
