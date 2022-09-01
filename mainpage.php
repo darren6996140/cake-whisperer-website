@@ -13,7 +13,7 @@
 			margin: 0;
 		}
 
-		.imgSlides img , .imgCourses img {
+		.slidesImg img , .coursesImg img {
 			display: block;
 			width: 70%;
 			margin-left: auto;
@@ -24,7 +24,7 @@
 			border-radius: 5px;
 		}
 
-		.imgContainer, .coursesContainer {
+		.slidesContainer, .coursesContainer {
 			position: relative;
 			margin: auto;
 			transition: 0.5s ease;
@@ -60,7 +60,7 @@
 		}
 
 		/* Number text (1/3 etc) */
-		.imgSlides .numbertext {
+		.slidesImg .numbertext {
 			color: black;
 			font-size: 200%;
 			padding: 8px 12px;
@@ -69,7 +69,7 @@
 		}
 
 		/* The dots/bullets/indicators */
-		.imgContainer .selectionDot {
+		.slidesContainer .selectionDot {
 			cursor: pointer;
 			height: 15px;
 			width: 15px;
@@ -85,11 +85,11 @@
 			background-color: rgb(113, 113, 113);
 		}
 
-		.imgSlides:hover .slideOverlay , .imgCourses:hover .coursesOverlay{
+		.slidesImg:hover .slidesOverlay , .coursesImg:hover .coursesOverlay{
 			opacity: 1;
 		}
 
-		.slideOverlay {
+		.slidesOverlay {
 			display: block;
 			position: absolute;
 			height: 95%;
@@ -100,7 +100,7 @@
 			border-radius: 5px;
 		}
 
-		.slideOverlay .slidesText {
+		.slidesOverlay .slidesText {
 			color: black;
 			font-size: 200%;
 			position: absolute;
@@ -125,7 +125,7 @@
 
 		.coursesOverlay .coursesText {
 			color: black;
-			font-size: 100%;
+			font-size: 140%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -148,8 +148,14 @@
 
 		/* On smaller screens, decrease text size */
 		@media screen and (max-width: 850px) {
-			.prev, .next, .imgContainer .imgSlides .slideOverlay .slidesText {
+			.prev, .next, .slidesContainer .slidesImg .slidesOverlay .slidesText, .coursesContainer .coursesImg .coursesOverlay .coursesText{
 				font-size: 120%;
+			}
+		}
+
+		@media screen and (max-width: 850px) {
+			.coursesContainer .coursesImg .coursesOverlay .coursesText{
+				font-size: 80%;
 			}
 		}
 
@@ -166,11 +172,11 @@
 
 <body>
 
-	<div class="imgContainer">
+	<div class="slidesContainer">
 
-		<div class="imgSlides">
+		<div class="slidesImg">
 			<a href="">
-			<div class="slideOverlay">
+			<div class="slidesOverlay">
     			<div class="slidesText">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.
 					<br><br>
@@ -184,9 +190,9 @@
 			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
 		</div>
 
-		<div class="imgSlides">
+		<div class="slidesImg">
 			<a href="">
-			<div class="slideOverlay">
+			<div class="slidesOverlay">
     			<div class="slidesText">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum sit provident eaque, quasi minus fugit impedit officia natus deleniti omnis temporibus voluptatum ipsum numquam eligendi? Ullam aliquam architecto blanditiis.
 					<br><br>
@@ -200,9 +206,9 @@
 			<img src="https://img-cdn.hltv.org/gallerypicture/aRNsxWJx1Agi5Fb7pdYiNa.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=3e845548f47cf36b31217361eb3299bb">
 		</div>
 
-		<div class="imgSlides">
+		<div class="slidesImg">
 			<a href="">
-			<div class="slideOverlay">
+			<div class="slidesOverlay">
     			<div class="slidesText">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque eveniet vero sapiente est qui. Aliquam quibusdam temporibus illum dignissimos veritatis, totam nesciunt accusantium, soluta quas repudiandae in blanditiis animi?
 					<br><br>
@@ -232,7 +238,7 @@
 	<br>
 
 	<div class="coursesContainer">
-		<div class="imgCourses">
+		<div class="coursesImg">
 			<a href="">
 			<div class="coursesOverlay">
     			<div class="coursesText">
@@ -242,7 +248,7 @@
 			</a><br>
 			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
 		</div>
-		<div class="imgCourses">
+		<div class="coursesImg">
 			<a href="">
 			<div class="coursesOverlay">
     			<div class="coursesText">
@@ -252,7 +258,7 @@
 			</a><br>
 			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
 		</div>
-		<div class="imgCourses">
+		<div class="coursesImg">
 			<a href="">
 			<div class="coursesOverlay">
     			<div class="coursesText">
@@ -280,7 +286,7 @@
 
 		function showSlides(n) {
 			let i;
-			let slides = document.getElementsByClassName("imgSlides");
+			let slides = document.getElementsByClassName("slidesImg");
 			let dots = document.getElementsByClassName("selectionDot");
 
 			if (n > slides.length) {
