@@ -5,7 +5,6 @@
 	<title>The Cake Whisperer</title>
 	<!--title logo-->
 	<link rel = "icon" href = "http://cdn.onlinewebfonts.com/svg/img_425531.png" type = "image/x-icon">
-
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,6 +133,18 @@
 			transition: 0.2s;
 		}
 
+		.sidebar h1{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			padding: 8px 8px 8px 30px;
+			font-size: 250%;
+			font-weight: bold;
+			display: block;
+			transition: 0.5s;
+			cursor: pointer;
+			overflow-wrap: normal;
+		}
+
 	</style>
 
 </head>
@@ -142,6 +153,7 @@
 
 <div id="sidebar" class="sidebar">
   <button class="close" onclick="closeNav()" >×</button>
+  <h1>Courses</h1>
   <a href="#" >longasslink</a>
   <a href="#" >longasslink</a>
   <a href="#" >longasslink</a>
@@ -158,7 +170,7 @@
   	</div>
 
 	<div id="right">
-		<a href="loginPage.php" class="login">Login</a>  
+		<a href="loginForm.php" class="login">Login</a>  
   	</div>
 
 </div>
