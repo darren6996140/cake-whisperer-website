@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
 		body {
@@ -102,7 +97,7 @@
 
 		.slidesOverlay .slidesText {
 			color: black;
-			font-size: 200%;
+			font-size: 170%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -125,7 +120,7 @@
 
 		.coursesOverlay .coursesText {
 			color: black;
-			font-size: 140%;
+			font-size: 120%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -148,8 +143,8 @@
 
 		/* On smaller screens, decrease text size */
 		@media screen and (max-width: 850px) {
-			.prev, .next, .slidesContainer .slidesImg .slidesOverlay .slidesText, .coursesContainer .coursesImg .coursesOverlay .coursesText{
-				font-size: 120%;
+			.prev, .next, .slidesContainer .slidesImg .slidesOverlay .slidesText{
+				font-size: 100%;
 			}
 		}
 
@@ -168,6 +163,7 @@
 		}
 
 	</style>
+	
 </head>
 
 <body>
