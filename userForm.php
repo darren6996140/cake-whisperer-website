@@ -29,7 +29,7 @@
             border-radius: 5px;
             border-collapse: collapse;
             margin: auto;
-            background-color: GainsBoro;
+            background-color: rgb(235, 235, 235);
         }
 
         .userForm table, .userForm td {
@@ -39,14 +39,14 @@
         .userForm .form {
             padding: 10px;
             width: 200px;
-            font-size: 15px;
+            font-size: 100%;
             border: none;
             border-radius: 5px;
         }
 
         .userForm .button {
             background-color: white;
-            font-size: 20px;
+            font-size: 150%;
             font-weight: bold;
             border: none;
             border-radius: 5px;

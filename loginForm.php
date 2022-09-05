@@ -4,11 +4,6 @@
 <head>
 
     <style>
-        body {
-			font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-			margin: 0;
-		}
-
         .loginForm {
             background-color: white;
             padding-bottom: 20px;
@@ -29,7 +24,7 @@
             border-radius: 5px;
             border-collapse: collapse;
             margin: auto;
-            background-color: GainsBoro;
+            background-color: rgb(235, 235, 235);
         }
 
         .loginForm table, .loginForm td {
@@ -39,14 +34,14 @@
         .loginForm .form {
             padding: 10px;
             width: 200px;
-            font-size: 15px;
+            font-size: 100%;
             border: none;
             border-radius: 5px;
         }
 
         .loginForm .button {
             background-color: white;
-            font-size: 20px;
+            font-size: 150%;
             font-weight: bold;
             border: none;
             border-radius: 5px;
