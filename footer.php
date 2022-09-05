@@ -68,8 +68,7 @@
 				<a href="https://www.youtube.com/watch?v=G8iEMVr7GFg"> <img class="links" src="images/ig.png" alt="Instagram Page"> </a>
 				<a href="https://www.youtube.com/watch?v=epyRUp0BhrA"> <img class="links" src="images/tw.png" alt="Twitter Page"> </a>
 				<a href="https://www.youtube.com/watch?v=ptw2FLKXDQE"> <img class="links" src="images/ws.png" alt="WhatsApp"> </a>
-				<a href="https://www.youtube.com/watch?v=TzXXHVhGXTQ"> <img class="links" src="images/yt.png" alt="YouTube Channel"> </a>
-			</p>
+				<a href="https://www.youtube.com/watch?v=xm3YgoEiEDc"> <img class="links" src="images/yt.png" alt="YouTube Channel"> </a>			</p>
 		</div>
 	</div>
 
