@@ -1,24 +1,19 @@
 <?php
-//Start session
 session_start ();
 
-//Sambungan ke DB
-include ('db_conn.php');
+include ('dbConn.php');
 
-//Simpan data session berdasarkan session kunci primer
-$emel = $_SESSION['emel'];
+$email = $_SESSION['email'];
 
-//dapatkan data pengguna berdasarkan session kunci primer
-$mysql = mysqli_query($conn, "SELECT * FROM pelanggan WHERE emel= '$emel'");
+$mysql = mysqli_query($conn, "SELECT * FROM user WHERE email= '$email'");
 $row = mysqli_fetch_array($mysql);
 
-$nama = $row['nama'];
-$peranan = $row['peranan']; //access level -- 1=admin 2=penggunabiasa
+$name = $row['name'];
+$class = $row['class'];
 
-//jika data session tidak dijumpai dalam jadual
-if(!isset($emel))
+if(!isset($email))
 {
-	header("Location: index.php"); //kembali ke paparan utama
+	header("Location: index.php");
 }
 
 ?>

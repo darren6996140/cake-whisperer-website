@@ -6,7 +6,7 @@ $email=$_POST['email'];
 $password=md5($_POST['password']);
 $noPhone=$_POST['noPhone'];
 
-$check = "SELECT email FROM pelanggan WHERE email = '$email'";
+$check = "SELECT email FROM user WHERE email = '$email'";
 $result = mysqli_query($conn, $check) or die(mysqli_error());
 
 if (mysqli_num_rows($result)> 0)
