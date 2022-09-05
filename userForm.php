@@ -52,6 +52,10 @@
             border-radius: 5px;
         }
 
+        .userForm .button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
         .userForm a {
             font-size: 20px;
             font-weight: bold;
@@ -101,7 +105,7 @@
                 <tr>
                     <td></td>
                     <td>Password :</td>
-                    <td><input type="password" name="password" class="form" required></td>
+                    <td><input type="password" name="password" placeholder="8+ characters" pattern=".{8,128}" class="form" required></td>
                     <td></td> 
                 </tr>
                 <tr>

@@ -45,6 +45,11 @@
             font-weight: bold;
             border: none;
             border-radius: 5px;
+            transition: 0.2s;
+        }
+
+        .loginForm .button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
         }
 
         .loginForm a {
