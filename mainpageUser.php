@@ -2,7 +2,9 @@
 <html lang="en">
 <?php
 include("session.php");
-include("header.php");
+include("headerUser.php");
+//!https://www.geeksforgeeks.org/how-to-upload-image-into-database-and-display-it-using-php/
+//!https://duckduckgo.com/?q=how+to+add+image+in+phpmyadmin+database&t=ffab&atb=v320-1&ia=web
 ?>
 <head>
 
