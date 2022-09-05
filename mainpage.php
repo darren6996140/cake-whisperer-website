@@ -3,11 +3,6 @@
 <head>
 
 	<style>
-		body {
-			font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-			margin: 0;
-		}
-
 		.slidesImg img , .coursesImg img {
 			display: block;
 			width: 70%;

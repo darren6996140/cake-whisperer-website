@@ -15,6 +15,8 @@
 		{
 			background: rgb(235, 235, 235);
 			padding: 10px;
+			font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+			margin: 0;
 		} 
 
 		.header
