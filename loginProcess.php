@@ -5,13 +5,12 @@ include('dbConn.php');
 
 $email = $_POST['email'];
 $oldPassword = $_POST['password'];
-$password = password_hash($oldPassword, PASSWORD_DEFAULT);
+$password = hash('sha256', $oldPassword);
 
 if(isset($_POST['login']))
 {
 
-	$mysql = "SELECT * FROM user
-			WHERE email = '$email' AND password ='$password'";
+	$mysql = "SELECT * FROM user WHERE email = '$email' AND password ='$password'";
 	$result = mysqli_query($conn , $mysql);
 	$row = mysqli_fetch_array($result);
 	
@@ -20,7 +19,6 @@ if(isset($_POST['login']))
 	
 		$_SESSION['email'] = $row['email'];
 		$name = $row['name'];
-		
 	
 		echo '<script>alert("Welcome '.$name.'");
 			window.location.href="mainpageUser.php";</script>';

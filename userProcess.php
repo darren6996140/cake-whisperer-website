@@ -1,11 +1,10 @@
 <?php
-//!https://alexwebdevelop.com/php-password-hashing/
 include ('dbConn.php');
 
 $name=$_POST['name'];
 $email=$_POST['email'];
 $oldPassword = $_POST['password'];
-$password = password_hash($oldPassword, PASSWORD_DEFAULT);
+$password = hash('sha256', $oldPassword);
 $noPhone=$_POST['noPhone'];
 
 $check = "SELECT email FROM user WHERE email = '$email'";
@@ -31,6 +30,7 @@ if (mysqli_query($conn, $mysql)){
 		 window.location.href="loginForm.php";</script>';
 		
 	}
+	
 else{
 	echo "Error;" . mysqli_error($conn);
 	}
