@@ -108,6 +108,7 @@
                     <td><input type="password" name="password" placeholder="8+ characters" pattern=".{8,128}" class="form" required></td>
                     <td></td> 
                 </tr>
+
                 <tr>
                     <td></td>
                     <td>Name :</td>
@@ -158,7 +159,6 @@
 
     <?php
     include("footer.php");
-    //!https://alexwebdevelop.com/php-password-hashing/
     ?>
 
 </body>
