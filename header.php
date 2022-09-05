@@ -30,19 +30,19 @@
 			border-radius: 8px;
 		}
 
-		.header #left
+		.header .left
 		{
 			flex: 9%;
 		}
 
-		.header #center
+		.header .center
 		{
 			flex: 82%;
 			color: white;
 			border-radius: 8px;
 		}
 
-		.header #right
+		.header .right
 		{
 			flex: 9%;
 			font-size: 170%;
@@ -154,24 +154,30 @@
 <body>
 
 <div id="sidebar" class="sidebar">
-  <button class="close" onclick="closeNav()" >×</button>
-  <h1>Courses</h1>
-  <a href="#" >longasslink</a>
-  <a href="#" >longasslink</a>
-  <a href="#" >longasslink</a>
+	<button class="close" onclick="closeNav()" >×</button>
+	<h1>Courses</h1>
+		<a href="#" >Course 1</a>
+		<a href="#" >Course 2</a>
+		<a href="#" >Course 3</a>
+		<a href="#" >Course 4</a>
+		<a href="#" >Course 5</a>
+	<h1>Our Company</h1>
+		<a href="#">About Us</a>
+		<a href="#">Work</a>
+		<a href="#">Privacy Notice</a>
 </div>
 
 <div class="header">
 
-    <div id="left">
-		<button  onclick="openNav()" class="open">☰</button>
+    <div class="left">
+		<button onclick="openNav()" class="open">☰</button>
 	</div>
 
-    <div id="center">
+    <div class="center">
 		<h1>The Cake Whisperer</h1>
   	</div>
 
-	<div id="right">
+	<div class="right">
 		<a href="loginForm.php" class="login">Login</a>  
   	</div>
 
