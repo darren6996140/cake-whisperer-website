@@ -1,9 +1,11 @@
 <?php
+//!https://alexwebdevelop.com/php-password-hashing/
 include ('dbConn.php');
 
 $name=$_POST['name'];
 $email=$_POST['email'];
-$password=md5($_POST['password']);
+$oldPassword = $_POST['password'];
+$password = password_hash($oldPassword, PASSWORD_DEFAULT);
 $noPhone=$_POST['noPhone'];
 
 $check = "SELECT email FROM user WHERE email = '$email'";

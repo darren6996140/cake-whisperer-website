@@ -4,7 +4,8 @@ session_start();
 include('dbConn.php');
 
 $email = $_POST['email'];
-$password = md5($_POST['password']);
+$oldPassword = $_POST['password'];
+$password = password_hash($oldPassword, PASSWORD_DEFAULT);
 
 if(isset($_POST['login']))
 {
