@@ -156,15 +156,15 @@
 <div id="sidebar" class="sidebar">
 	<button class="close" onclick="closeNav()" >×</button>
 	<h1>Courses</h1>
-		<a href="#" >Course 1</a>
-		<a href="#" >Course 2</a>
-		<a href="#" >Course 3</a>
-		<a href="#" >Course 4</a>
-		<a href="#" >Course 5</a>
+		<a href="bakingBasics.php" >Baking Basics</a>
+		<a href="cakeDecorations.php" >Cake Decorations</a>
+		<a href="cookiesBaking.php" >Cookies Baking</a>
+		<a href="pastryBaking.php" >Pastry Baking</a>
+		<a href="breadBaking.php" >Bread Baking</a>
 	<h1>Our Company</h1>
-		<a href="#">About Us</a>
-		<a href="#">Work</a>
-		<a href="#">Privacy Notice</a>
+		<a href="aboutus.php">About Us</a>
+		<a href="workworkwork.php">Work</a>
+		<a href="privacy.php">Privacy Notice</a>
 </div>
 
 <div class="header">
