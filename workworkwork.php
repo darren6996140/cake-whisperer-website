@@ -9,11 +9,12 @@
             font-size: 350%;
             font-weight: bold;
             text-align: center;
+            transition: 0.5s;
         }
 
         @media screen and (max-width: 850px) {
 			.work{
-				font-size: 100%;
+				font-size: 200%;
 			}
 		}
 

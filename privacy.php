@@ -8,11 +8,12 @@
             padding: 2%;
             font-size: 250%;
             font-weight: bold;
+            transition: 0.5s;
         }
 
         @media screen and (max-width: 850px) {
 			.privacy{
-				font-size: 100%;
+				font-size: 180%;
 			}
 		}
 
