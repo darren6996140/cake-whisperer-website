@@ -175,10 +175,10 @@
 	<button class="close" onclick="closeNav()" >×</button>
 	<h1>Courses</h1>
 		<a href="bakingBasics.php" >Baking Basics</a>
+		<a href="breadBaking.php" >Bread Baking</a>
 		<a href="cakeDecorations.php" >Cake Decorations</a>
 		<a href="cookiesBaking.php" >Cookies Baking</a>
 		<a href="pastryBaking.php" >Pastry Baking</a>
-		<a href="breadBaking.php" >Bread Baking</a>
 	<h1>Our Company</h1>
 		<a href="aboutus.php">About Us</a>
 		<a href="workworkwork.php">Work</a>
