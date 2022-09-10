@@ -30,8 +30,15 @@
 
 <body>
     <?php
-    include("header.php")
-    //!when user login
+    include("session.php");
+
+    if ($name == true){
+        include("headerUser.php");
+    }
+
+    else{
+        include("header.php");
+    }
     ?>
 
     <div class="aboutus">

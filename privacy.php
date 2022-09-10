@@ -23,7 +23,15 @@
 
 <body>
     <?php
-    include("header.php");
+    include("session.php");
+
+    if ($name == true){
+        include("headerUser.php");
+    }
+
+    else{
+        include("header.php");
+    }
     ?>
 
     <div class="privacy">
