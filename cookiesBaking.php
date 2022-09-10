@@ -21,8 +21,8 @@
 
 	<style>
 
-        .privacy{
-            padding: 2%;
+        .description, .details{
+            padding: 1%;
             font-size: 250%;
             font-weight: bold;
             transition: 0.5s;
@@ -30,8 +30,17 @@
             border-radius: 5px;
         }
 
+        .description p{
+            margin-top: 0;
+        }
+
+        .description img{
+            width: 50%;
+            padding: 1%;
+        }
+
         @media screen and (max-width: 850px) {
-			.privacy{
+			.description, .details{
 				font-size: 180%;
 			}
 		}
@@ -42,13 +51,33 @@
 
 <body>
 
-    <div class="privacy">
-        <p>
-            The Cake Whisperer ("The Company") will absolutely collect and sell all your data for optimal monetary benefits. Thank you and have fun learning!
-        </p>
-    </div>
+    <?php
+        include("session.php");
+
+        $mysql = "SELECT * FROM course WHERE name  = 'Cookies Baking'";
+        $result = mysqli_query($conn, $mysql) or die(mysql_error());
+
+        if (mysqli_num_rows($result) > 0){
+            while($row = mysqli_fetch_assoc($result)){
+    ?>
+
+        <div class="description">
+            <center><img src="images/cookiesBaking.jpg" alt="cookiesBaking"></center>
+            <p>
+                Welcome to Cookies Baking! This course provides classes to bake mouth-watering cookies that you can share with friends and family! Recommended for those who took Baking Basics.
+            </p>
+        </div>
+
+        <br>
+
+        <div class="details">
+            <p>Fee: <?php echo $row['fee'];?></p>
+            <p>Date & Time: <?php echo $row['time'];?></p>
+        </div>
 
     <?php
+            }
+        }
     include("footer.php");
     ?>
 </body>
