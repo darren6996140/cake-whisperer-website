@@ -8,6 +8,8 @@
             display: flex;
             padding: 2%;
             font-size: 150%;
+            background-color: rgba(235, 235, 235, 0.5);
+            border-radius: 5px;
         }
 
         .aboutus .history{
@@ -30,9 +32,14 @@
 
 <body>
     <?php
-    include("session.php");
 
-    if ($name == true){
+    error_reporting(E_ERROR | E_PARSE);
+    
+    session_start();
+
+    $email = $_SESSION['email'];
+
+    if ($email == true){
         include("headerUser.php");
     }
 
@@ -57,7 +64,7 @@
     </div>
 
     <?php
-    include("footer.php")
+    include("footer.php");
     ?>
 </body>
 
