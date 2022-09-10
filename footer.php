@@ -5,8 +5,8 @@
 <style>
 	/* style whole footer */
 	.footer {
-		color: white;
-		background: rgb(0, 72, 106);
+		color: black;
+		background: rgba(235, 235, 235, 0.5);
 		display: flex;
 		font-family: andale mono, monospace;
 		border-radius: 8px;

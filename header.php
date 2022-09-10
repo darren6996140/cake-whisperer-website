@@ -13,10 +13,13 @@
 
 		body
 		{
-			background: rgb(235, 235, 235);
 			padding: 10px;
 			font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 			margin: 0;
+			background-image: url('images/baking<?php echo(rand(0,4)); ?>.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
 		} 
 
 		.header
@@ -24,7 +27,7 @@
 			display: flex;
 			font-family: andale mono, monospace;
 			font-size: 170%;
-			background: rgb(0, 72, 106);
+			background: rgba(235, 235, 235, 0.5);
 			text-align: center;
 			transition: 0.5s;
 			border-radius: 8px;
@@ -38,13 +41,13 @@
 		.header .center
 		{
 			flex: 82%;
-			color: white;
+			color: black;
 			border-radius: 8px;
 		}
 
 		.header .center a
 		{
-			color: white;
+			color: black;
 			text-decoration: none;
 		}
 
@@ -53,17 +56,21 @@
 			flex: 9%;
 			font-size: 170%;
 	  		cursor: pointer;
-  			background-color: rgb(0, 72, 106);
-  			color: white;
+  			color: black;
 			padding: 30px 25px 30px 15px;
 			border-radius: 8px;
+		}
+
+		.header .right a
+		{
+			color: black;
 		}
 
 		.header .open {
 			font-size: 170%;
 	  		cursor: pointer;
-  			background-color: rgb(0, 72, 106);
-  			color: white;
+  			background-color: rgba(235, 235, 235, 0.0);
+  			color: black;
   			padding: 30px 15px;
   			border: none;
 			border-radius: 8px;
@@ -80,7 +87,7 @@
 			width: 0;
 			top: 0;
 			left: 0;
-			background-color: rgb(235, 235, 235);
+			background-color: rgba(235, 235, 235, 0.95);
 			overflow-x: hidden;
 			transition: 0.5s;
 			padding-top: 60px;
@@ -103,7 +110,7 @@
 			font-size: 250%;
 			transition: 0.5s;
 			cursor: pointer;
-			background-color: rgb(235, 235, 235);
+			background-color: rgba(235, 235, 235, 0.0);
   			color: black;
 			border: none;
 			padding: 10px 0px;
@@ -122,7 +129,7 @@
 		}
 
 		.open:hover{
-			color: rgba(220, 220, 220, 0.700);
+			color: rgba(0, 0, 0, 0.5);
 			transition: 0.2s;
 		}
 
@@ -132,11 +139,16 @@
 		}
 
 		.login:hover{
-			color: rgba(75, 171, 255, 0.75);
+			color: rgba(0, 0, 0, 0.5);
 			transition: 0.2s;
 		}
 
 		.sidebar a:hover{
+			color: rgba(0, 0, 0, 0.500);
+			transition: 0.2s;
+		}
+
+		.center a:hover{
 			color: rgba(0, 0, 0, 0.500);
 			transition: 0.2s;
 		}
