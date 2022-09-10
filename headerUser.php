@@ -228,19 +228,6 @@
 		</div>
   	</div>
 
-	<!-- <div class="right">
-		<div class="dropdown">
-		<button onclick="dropdown()" class="profile"><img src="images/defaultProfile.png" alt="profile picture"></button>
-			<div id="dropdownContent" class="dropdownContent">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
-			</div>
-		</div>
-  	</div> -->
-
-	  <!-- https://www.w3schools.com/howto/howto_js_dropdown.asp -->
-
 </div>
 
 <script>
