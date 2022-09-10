@@ -42,6 +42,12 @@
 			border-radius: 8px;
 		}
 
+		.header .center a
+		{
+			color: white;
+			text-decoration: none;
+		}
+
 		.header .right
 		{
 			flex: 9%;
@@ -166,6 +172,7 @@
 			overflow: visible;
 			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			z-index: 1;
+			font-size: 70%;
 		}
 
 		.profile:hover, .profile:focus {
@@ -214,16 +221,19 @@
 	</div>
 
     <div class="center">
-		<h1>The Cake Whisperer</h1>
+		<h1><a href="mainpageUser.php">The Cake Whisperer</a></h1>
   	</div>
 
 	  <div class="right">
 		<div class="dropdown">
 		<img src="images/defaultProfile.png" alt="profile picture" class="profile" onclick="dropdown()">
 			<div id="dropdownContent" class="dropdownContent">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
+				<a href="profile.php">Profile</a>
+				<a href="#">Your Courses</a>
+				<a href="#">Settings</a>
+				<a href="#">Language</a>
+				<a href="#" class="theme">&#9789; Change Theme</a>
+				<a href="logout.php" style="color: red">Log Out</a>
 			</div>
 		</div>
   	</div>

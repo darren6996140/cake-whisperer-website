@@ -42,6 +42,12 @@
 			border-radius: 8px;
 		}
 
+		.header .center a
+		{
+			color: white;
+			text-decoration: none;
+		}
+
 		.header .right
 		{
 			flex: 9%;
@@ -174,7 +180,7 @@
 	</div>
 
     <div class="center">
-		<h1>The Cake Whisperer</h1>
+		<h1><a href="index.php">The Cake Whisperer</a></h1>
   	</div>
 
 	<div class="right">
