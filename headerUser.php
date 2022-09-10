@@ -63,14 +63,15 @@
 			border-radius: 8px;
 		}
 
-		.header .profile, .header img, .header button{
+		.header .profile{
 			width: 50px;
 			height: 50px;
 			color: white;
-			padding: 16px;
+			padding: 6px;
 			font-size: 16px;
 			border: none;
 			cursor: pointer;
+			transition: 0.5s;
 		}
 
 		.sidebar {
@@ -130,11 +131,6 @@
 			transition: 0.2s;
 		}
 
-		.profile:hover{
-			color: rgba(75, 171, 255, 0.75);
-			transition: 0.2s;
-		}
-
 		.sidebar a:hover{
 			color: rgba(0, 0, 0, 0.500);
 			transition: 0.2s;
@@ -164,15 +160,16 @@
 		.dropdownContent {
 			display: none;
 			position: absolute;
-			background-color: #f1f1f1;
+			right: -60px;
+			background-color: rgb(235, 235, 235);
 			min-width: 160px;
-			overflow: auto;
+			overflow: visible;
 			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			z-index: 1;
 		}
 
 		.profile:hover, .profile:focus {
-			background-color: #2980B9;
+			background-color: rgba(75, 171, 255, 0.75);
 		}
 
 		.dropdownContent a {
@@ -190,15 +187,6 @@
 			display: block;
 		}
 
-		.profile {
-			background-color: #3498DB;
-			color: white;
-			padding: 16px;
-			font-size: 16px;
-			border: none;
-			cursor: pointer;
-		}
-
 	</style>
 
 </head>
@@ -208,15 +196,15 @@
 <div id="sidebar" class="sidebar">
 	<button class="close" onclick="closeNav()" >×</button>
 	<h1>Courses</h1>
-		<a href="#" >Course 1</a>
-		<a href="#" >Course 2</a>
-		<a href="#" >Course 3</a>
-		<a href="#" >Course 4</a>
-		<a href="#" >Course 5</a>
+		<a href="bakingBasics.php" >Baking Basics</a>
+		<a href="cakeDecorations.php" >Cake Decorations</a>
+		<a href="cookiesBaking.php" >Cookies Baking</a>
+		<a href="pastryBaking.php" >Pastry Baking</a>
+		<a href="breadBaking.php" >Bread Baking</a>
 	<h1>Our Company</h1>
-		<a href="#">About Us</a>
-		<a href="#">Work</a>
-		<a href="#">Privacy Notice</a>
+		<a href="aboutus.php">About Us</a>
+		<a href="workworkwork.php">Work</a>
+		<a href="privacy.php">Privacy Notice</a>
 </div>
 
 <div class="header">
@@ -229,7 +217,18 @@
 		<h1>The Cake Whisperer</h1>
   	</div>
 
-	<div class="right">
+	  <div class="right">
+		<div class="dropdown">
+		<img src="images/defaultProfile.png" alt="profile picture" class="profile" onclick="dropdown()">
+			<div id="dropdownContent" class="dropdownContent">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+  	</div>
+
+	<!-- <div class="right">
 		<div class="dropdown">
 		<button onclick="dropdown()" class="profile"><img src="images/defaultProfile.png" alt="profile picture"></button>
 			<div id="dropdownContent" class="dropdownContent">
@@ -238,7 +237,7 @@
 				<a href="#">Contact</a>
 			</div>
 		</div>
-  	</div>
+  	</div> -->
 
 	  <!-- https://www.w3schools.com/howto/howto_js_dropdown.asp -->
 
