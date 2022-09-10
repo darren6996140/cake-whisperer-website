@@ -2,6 +2,23 @@
 <html lang="en">
 <head>
 
+    <?php
+
+    error_reporting(E_ERROR | E_PARSE);
+
+    session_start();
+
+    $email = $_SESSION['email'];
+
+    if ($email == true){
+        include("headerUser.php");
+    }
+
+    else{
+        include("header.php");
+    }
+    ?>
+
 	<style>
 
         .privacy{
@@ -24,22 +41,6 @@
 </head>
 
 <body>
-    <?php
-
-    error_reporting(E_ERROR | E_PARSE);
-
-    session_start();
-
-    $email = $_SESSION['email'];
-
-    if ($email == true){
-        include("headerUser.php");
-    }
-
-    else{
-        include("header.php");
-    }
-    ?>
 
     <div class="privacy">
         <p>
