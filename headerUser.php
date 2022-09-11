@@ -242,7 +242,7 @@
 		<img src="images/defaultProfile.png" alt="profile picture" class="profile" onclick="dropdown()">
 			<div id="dropdownContent" class="dropdownContent">
 				<a href="profile.php">Profile</a>
-				<a href="#">Your Courses</a>
+				<a href="yourCourses.php">Your Courses</a>
 				<a href="#">Settings</a>
 				<a href="#">Language</a>
 				<a href="#" class="theme">&#9789; Change Theme</a>
