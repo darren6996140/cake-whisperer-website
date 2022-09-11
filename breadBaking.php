@@ -100,7 +100,7 @@
                 <div class="details">
 
             <div class="info">
-                <p>Fee: <?php echo $row['fee'];?></p>
+                <p>Fee: RM<?php echo $row['fee'];?> / month</p>
                 <p>Time: Every Tuesday at <?php echo $row['time'];?></p>
             </div>
 
