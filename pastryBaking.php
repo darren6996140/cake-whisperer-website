@@ -109,24 +109,26 @@
             <div class="register">
                 <br><p>
                 <?php
-                    $mysql = "SELECT idCourse FROM user WHERE email  = '$email' ";
+                    $mysql = "SELECT idCourse FROM regcourse WHERE email  = '$email' ";
                     $result = mysqli_query($conn, $mysql) or die(mysql_error());
+
+                    $courseRegistered = array();
 
                     if (mysqli_num_rows($result) > 0){
                         while($row = mysqli_fetch_assoc($result)){
-                            $courseRegistered = $row['idCourse'];
-                            $str = explode(",", $courseRegistered);
-                            $course = array_search("5", $str);
-                            
-                            if ($course == ""){
-                                echo '<a href="courseForm.php">Register Now!</a>';
-                            }
-
-                            else{
-                                echo ("You are already registered to this course.");
-                            }
-
+                            array_push($courseRegistered, $row['idCourse']);
                         }
+                    }
+
+                    $course = array_search("5", $courseRegistered);
+
+                    if ($course == ""){
+                        echo '<a href="courseForm.php">Register Now!</a>';
+                        echo $course;
+                    }
+
+                    else{
+                        echo ("You are already registered to this course.");
                     }
 
                 ?>
