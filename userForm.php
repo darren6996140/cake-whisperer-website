@@ -10,7 +10,7 @@
 		}
 
         .userForm {
-            background-color: white;
+            background-color: rgba(235, 235, 235, 0.5);
             padding-bottom: 20px;
             border-radius: 5px;
         }
