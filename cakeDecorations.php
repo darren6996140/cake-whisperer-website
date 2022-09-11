@@ -30,6 +30,29 @@
             border-radius: 5px;
         }
 
+        .details{
+            display: flex;
+        }
+
+        .details .info{
+            flex: 50%;
+            text-align: left;
+        }
+
+        .details .register{
+            flex: 50%;
+            text-align: right;
+        }
+
+        .details .register a{
+            border-style: solid;
+            text-decoration: none;
+            border-width: 3px;
+            padding: 1%;
+            color: rgb(75, 171, 255);
+            transition: 0.5s;
+        }
+
         .description p{
             margin-top: 0;
         }
@@ -44,6 +67,10 @@
 				font-size: 180%;
 			}
 		}
+
+                .details .register a:hover{
+            color: rgba(0, 0, 0, 0.5);
+        }
 
 	</style>
 	
@@ -70,14 +97,46 @@
 
         <br>
 
-        <div class="details">
-            <p>Fee: <?php echo $row['fee'];?></p>
-            <p>Date & Time: <?php echo $row['time'];?></p>
+                <div class="details">
+
+            <div class="info">
+                <p>Fee: <?php echo $row['fee'];?></p>
+                <p>Date & Time: <?php echo $row['time'];?></p>
+            </div>
+
+            <?php }} ?>
+
+            <div class="register">
+                <br><p>
+                <?php
+                    $mysql = "SELECT idCourse FROM user WHERE email  = '$email' ";
+                    $result = mysqli_query($conn, $mysql) or die(mysql_error());
+
+                    if (mysqli_num_rows($result) > 0){
+                        while($row = mysqli_fetch_assoc($result)){
+                            $courseRegistered = $row['idCourse'];
+                            $str = explode(",", $courseRegistered);
+                            $course = array_search("3", $str);
+                            
+                            if ($course == ""){
+                                echo '<a href="courseRegistration.php">Register Now!</a>';
+                            }
+
+                            else{
+                                echo ("You are already registered to this course.");
+                            }
+
+                        }
+                    }
+
+                ?>
+                </p>
+            
+            </div>
+                   
         </div>
 
     <?php
-            }
-        }
     include("footer.php");
     ?>
 </body>
