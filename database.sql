@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2022 at 10:59 AM
+-- Generation Time: Sep 11, 2022 at 11:00 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -78,17 +78,16 @@ CREATE TABLE `user` (
   `name` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `noPhone` varchar(12) NOT NULL,
-  `class` int(1) NOT NULL,
-  `idCourse` varchar(20) NOT NULL
+  `class` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`email`, `name`, `password`, `noPhone`, `class`, `idCourse`) VALUES
-('admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '000000000', 1, '0'),
-('liaukaize', 'barbie', '84d9c4b849506b6d8f8075a9000e7e0a254be71060ea889fad3c88395988f4fc', '999', 2, '1, 2');
+INSERT INTO `user` (`email`, `name`, `password`, `noPhone`, `class`) VALUES
+('admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '000000000', 1),
+('liaukaize', 'barbie', '84d9c4b849506b6d8f8075a9000e7e0a254be71060ea889fad3c88395988f4fc', '999', 2);
 
 --
 -- Indexes for dumped tables
