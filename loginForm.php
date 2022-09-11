@@ -93,14 +93,14 @@
                 <tr>
                     <td></td>
                     <td>Email :</td>
-                    <td><input type="text" name="email" class="form" required</td>
+                    <td><input type="text" name="email" class="form" required></td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
                     <td>Password :</td>
-                    <td><input type="password" name="password" class="form" required</td>
+                    <td><input type="password" name="password" class="form" required></td>
                     <td></td>
                 </tr>
 
