@@ -56,7 +56,7 @@
             border-radius: 5px;
         }
 
-        .courseForm .courses {
+        .courseForm .course {
             font-size: 150%;
             border-radius: 5px;
             border: solid;
@@ -155,7 +155,7 @@
                     <td></td>
                     <td>Select a course: </td>
                     <td>
-                        <select name="courses" class="courses">
+                        <select name="course" class="course">
                             <?php 
                                 echo $option1;
                                 echo $option2;
