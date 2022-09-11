@@ -119,7 +119,7 @@
                             $course = array_search("1", $str);
                             
                             if ($course == ""){
-                                echo '<a href="courseRegistration.php">Register Now!</a>';
+                                echo '<a href="courseForm.php">Register Now!</a>';
                             }
 
                             else{
