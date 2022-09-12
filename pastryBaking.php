@@ -122,10 +122,13 @@
 
                     $course = array_search("5", $courseRegistered);
 
-                    if ($course == ""){
-                        echo '<a href="courseForm.php">Register Now!</a>';
-                        echo $course;
+                    if ($email == ""){
+                        echo '<a href="userForm.php">Register as new user</a>';
                     }
+
+                    elseif ($course == ""){
+                        echo '<a href="courseForm.php">Register Now!</a>';
+                    }       
 
                     else{
                         echo ("You are already registered to this course.");
