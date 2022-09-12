@@ -177,7 +177,6 @@
 				</div>
   			</div>
 			</a><br>
-			<div class="numbertext">1 / 3</div>
 			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
 		</div>
 
@@ -193,7 +192,6 @@
 				</div>
   			</div>
 			</a><br>
-			<div class="numbertext">2 / 3</div>
 			<img src="https://img-cdn.hltv.org/gallerypicture/aRNsxWJx1Agi5Fb7pdYiNa.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=3e845548f47cf36b31217361eb3299bb">
 		</div>
 
@@ -209,7 +207,6 @@
 				</div>
   			</div>
 			</a><br>
-			<div class="numbertext">3 / 3</div>
 			<img src="https://img-cdn.hltv.org/gallerypicture/_OjQhIl1uIPp5AWnDJcnTc.jpg?ixlib=java-2.1.0&w=1600&s=43e20da907eeeb30f0ec415a4fe884be">
 		</div>
 
