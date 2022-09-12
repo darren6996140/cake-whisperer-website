@@ -153,10 +153,6 @@
 			display: flex;
 		}
 
-		.coursesContainer img{
-			flex: 33.33%;
-		}
-
 	</style>
 	
 </head>
