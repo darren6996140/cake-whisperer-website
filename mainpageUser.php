@@ -6,6 +6,186 @@ include("headerUser.php");
 ?>
 <head>
 
+	<?php
+		$mysql = "SELECT idCourse FROM regcourse WHERE email  = '$email'";
+		$result = mysqli_query($conn, $mysql) or die(mysql_error());
+
+		$courseRegistered = array();
+
+		if (mysqli_num_rows($result) > 0){
+			while($row = mysqli_fetch_assoc($result)){
+				array_push($courseRegistered, $row['idCourse']);
+			}
+		}
+
+		$course1 = array_search("1", $courseRegistered);
+        $course2 = array_search("2", $courseRegistered);
+        $course3 = array_search("3", $courseRegistered);
+        $course4 = array_search("4", $courseRegistered);
+        $course5 = array_search("5", $courseRegistered);
+
+		$numCourses = count($courseRegistered);
+
+		function printCourse1Big(){
+			echo '<div class="slidesImg">';
+			echo '<a href="yourCourses.php">';
+			echo '<div class="slidesOverlay">';
+			echo '<div class="slidesText">';
+			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/bakingBasics.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse2Big(){
+			echo '<div class="slidesImg">';
+			echo '<a href="yourCourses.php">';
+			echo'<div class="slidesOverlay">';
+			echo '<div class="slidesText">';
+			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo'<img src="images/breadBaking.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse3Big(){
+			echo '<div class="slidesImg">';
+			echo '<a href="yourCourses.php">';
+			echo'<div class="slidesOverlay">';
+			echo '<div class="slidesText">';
+			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo'<img src="images/cakeDecorations.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse4Big(){
+			echo '<div class="slidesImg">';
+			echo '<a href="yourCourses.php">';
+			echo'<div class="slidesOverlay">';
+			echo '<div class="slidesText">';
+			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo'<img src="images/cookiesBaking.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse5Big(){
+			echo '<div class="slidesImg">';
+			echo '<a href="yourCourses.php">';
+			echo'<div class="slidesOverlay">';
+			echo '<div class="slidesText">';
+			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo'<img src="images/pastryBaking.jpg">';
+			echo '</div>';
+		}
+
+		//!tbd
+		function printDefaultBig(){
+			echo '<div class="slidesImg">';
+			echo '<a href="">';
+			echo'<div class="slidesOverlay">';
+			echo '<div class="slidesText">';
+			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo'<img src="images/baking0.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse1Small(){
+			echo '<div class="coursesImg">';
+			echo '<a href="courseForm.php">';
+			echo '<div class="coursesOverlay">';
+			echo '<div class="coursesText">';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/bakingBasics.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse2Small(){
+			echo '<div class="coursesImg">';
+			echo '<a href="courseForm.php">';
+			echo '<div class="coursesOverlay">';
+			echo '<div class="coursesText">';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/breadBaking.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse3Small(){
+			echo '<div class="coursesImg">';
+			echo '<a href="courseForm.php">';
+			echo '<div class="coursesOverlay">';
+			echo '<div class="coursesText">';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/cakeDecorations.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse4Small(){
+			echo '<div class="coursesImg">';
+			echo '<a href="courseForm.php">';
+			echo '<div class="coursesOverlay">';
+			echo '<div class="coursesText">';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/cookiesBaking.jpg">';
+			echo '</div>';
+		}
+
+		function printCourse5Small(){
+			echo '<div class="coursesImg">';
+			echo '<a href="courseForm.php">';
+			echo '<div class="coursesOverlay">';
+			echo '<div class="coursesText">';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/pastryBaking.jpg">';
+			echo '</div>';
+		}
+
+		//!tbd
+		function printDefaultSmall(){
+			echo '<div class="coursesImg">';
+			echo '<a href="courseForm.php">';
+			echo '<div class="coursesOverlay">';
+			echo '<div class="coursesText">';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
+			echo '</div>';
+			echo '</div>';
+			echo '</a><br>';
+			echo '<img src="images/baking1.jpg">';
+			echo '</div>';
+		}
+
+	?>
+
 	<style>
 		.slidesImg img , .coursesImg img {
 			display: block;
@@ -53,15 +233,6 @@ include("headerUser.php");
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 
-		/* Number text (1/3 etc) */
-		.slidesImg .numbertext {
-			color: black;
-			font-size: 200%;
-			padding: 8px 12px;
-			position: absolute;
-			top: 0;
-		}
-
 		/* The dots/bullets/indicators */
 		.slidesContainer .selectionDot {
 			cursor: pointer;
@@ -90,7 +261,7 @@ include("headerUser.php");
 			width: 100%;
 			opacity: 0;
 			transition: 0.5s ease;
-			background-color: rgba(255, 255, 255, 0.6);
+			background-color: rgba(255, 255, 255, 0.5);
 			border-radius: 5px;
 		}
 
@@ -110,10 +281,22 @@ include("headerUser.php");
 		.coursesOverlay {
 			position: absolute;
 			height: 110%;
-			width: 33.33%;
+
+			<?php
+			if($numCourses == 2){
+				echo 'width: 33.33%;';
+			}
+			elseif($numCourses == 3){
+				echo 'width: 50%;';
+			}
+			else{
+				echo 'width; 33.33%;';
+			}
+			?>
+
 			opacity: 0;
 			transition: 0.5s ease;
-			background-color: rgba(255, 255, 255, 0.6);
+			background-color: rgba(255, 255, 255, 0.5);
 			border-radius: 5px;
 		}
 
@@ -157,8 +340,18 @@ include("headerUser.php");
 			display: flex;
 		}
 
-		.coursesContainer img{
-			flex: 33.33%;
+		.coursesImg{
+			<?php
+			if($numCourses == 2){
+				echo 'width: 33.33%;';
+			}
+			elseif($numCourses == 3){
+				echo 'width: 50%;';
+			}
+			else{
+				echo 'width; 33.33%;';
+			}
+			?>
 		}
 
 	</style>
@@ -169,53 +362,31 @@ include("headerUser.php");
 
 	<div class="slidesContainer">
 
-		<div class="slidesImg">
-			<a href="">
-			<div class="slidesOverlay">
-    			<div class="slidesText">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, odio. Velit magni voluptate aspernatur voluptatibus asperiores fugit qui accusantium distinctio, reprehenderit in, nobis, maiores minima odio iure impedit ex quisquam.
-					<br><br>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt natus animi ad nam accusamus amet reiciendis? Cum consequatur consequuntur tempore! Deleniti error iste aperiam debitis nulla aut, ullam vitae.
-				</div>
-  			</div>
-			</a><br>
-			<div class="numbertext">1 / 3</div>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
-		</div>
+		<?php
+		if($course1 != ""){
+            printCourse1Big();
+        }
 
-		<div class="slidesImg">
-			<a href="">
-			<div class="slidesOverlay">
-    			<div class="slidesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum sit provident eaque, quasi minus fugit impedit officia natus deleniti omnis temporibus voluptatum ipsum numquam eligendi? Ullam aliquam architecto blanditiis.
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quia eius odio possimus soluta doloremque incidunt in ad quas ipsa reprehenderit obcaecati laborum cupiditate quibusdam praesentium velit! Et, veritatis unde?
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident in, labore alias magni itaque impedit amet. Quis, labore nesciunt id obcaecati cum sunt dolores commodi unde ipsam, recusandae reiciendis.
-				</div>
-  			</div>
-			</a><br>
-			<div class="numbertext">2 / 3</div>
-			<img src="https://img-cdn.hltv.org/gallerypicture/aRNsxWJx1Agi5Fb7pdYiNa.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=3e845548f47cf36b31217361eb3299bb">
-		</div>
+        if($course2 != ""){
+            printCourse2Big();
+        }
 
-		<div class="slidesImg">
-			<a href="">
-			<div class="slidesOverlay">
-    			<div class="slidesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque eveniet vero sapiente est qui. Aliquam quibusdam temporibus illum dignissimos veritatis, totam nesciunt accusantium, soluta quas repudiandae in blanditiis animi?
-					<br><br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima voluptate commodi, fugiat fuga molestias quidem sequi, aperiam ipsum sapiente officia ullam culpa, consectetur nesciunt delectus qui consequatur excepturi nisi?
-					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga recusandae nostrum iure, fugiat porro magnam tempora ea maiores accusantium dolores provident modi perferendis harum labore velit placeat sed ipsum.
-				</div>
-  			</div>
-			</a><br>
-			<div class="numbertext">3 / 3</div>
-			<img src="https://img-cdn.hltv.org/gallerypicture/_OjQhIl1uIPp5AWnDJcnTc.jpg?ixlib=java-2.1.0&w=1600&s=43e20da907eeeb30f0ec415a4fe884be">
-		</div>
+        if($course3 != ""){
+            printCourse3Big();
+        }
+
+        if($course4 != ""){
+            printCourse4Big();
+        }
+
+        if($course5 != ""){
+            printCourse5Big();
+        }
+
+		else{
+			printDefaultBig();
+		}
+		?>
 
 		<a class="prev" onclick="plusSlides(-1)">❮</a>
 		<a class="next" onclick="plusSlides(1)">❯</a>
@@ -223,9 +394,40 @@ include("headerUser.php");
 		<br>
 
 		<div style="text-align: center;">
-			<span class="selectionDot" onclick="currentSlide(1)"></span>
-			<span class="selectionDot" onclick="currentSlide(2)"></span>
-			<span class="selectionDot" onclick="currentSlide(3)"></span>
+
+			<?php
+			if ($numCourses == 1){
+				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
+			}
+			elseif ($numCourses == 2){
+				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';				
+			}
+			elseif ($numCourses == 3){
+				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
+			}
+			elseif ($numCourses == 4){
+				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(4)"></span>';
+			}
+			elseif ($numCourses == 5){
+				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(4)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(5)"></span>';
+			}
+			else{
+				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
+				echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
+			}		
+			?>
+
 		</div>
 
 	</div>
@@ -233,39 +435,36 @@ include("headerUser.php");
 	<br>
 
 	<div class="coursesContainer">
-		<div class="coursesImg">
-			<a href="">
-			<div class="coursesOverlay">
-    			<div class="coursesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!
-				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
-		</div>
-		<div class="coursesImg">
-			<a href="">
-			<div class="coursesOverlay">
-    			<div class="coursesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat eius eligendi, natus expedita fugiat, necessitatibus, harum ipsum corporis illum sequi soluta. Necessitatibus architecto nobis facilis molestiae sit harum dolorem!
-				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
-		</div>
-		<div class="coursesImg">
-			<a href="">
-			<div class="coursesOverlay">
-    			<div class="coursesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat expedita explicabo modi aut officiis, perferendis nemo officia impedit amet quia, delectus, cum voluptatem eveniet? Ab cupiditate laudantium obcaecati totam aliquid.
-				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
-		</div>
+		
+		<?php
+		if($course1 == ""){
+            printCourse1Small();
+        }
+
+        if($course2 == ""){
+            printCourse2Small();
+        }
+
+        if($course3 == ""){
+            printCourse3Small();
+        }
+
+        if($course4 == ""){
+            printCourse4Small();
+        }
+
+        if($course5 == ""){
+            printCourse5Small();
+        }
+
+		// else{
+		// 	printDefaultSmall();
+		// }
+		?>
+
 	</div>
 
-	<br>
+	<br><br>
 
 	<script>
 		let slideIndex = 1;

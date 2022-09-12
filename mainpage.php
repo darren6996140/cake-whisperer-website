@@ -49,15 +49,6 @@
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 
-		/* Number text (1/3 etc) */
-		.slidesImg .numbertext {
-			color: black;
-			font-size: 200%;
-			padding: 8px 12px;
-			position: absolute;
-			top: 0;
-		}
-
 		/* The dots/bullets/indicators */
 		.slidesContainer .selectionDot {
 			cursor: pointer;
@@ -92,7 +83,6 @@
 
 		.slidesOverlay .slidesText {
 			color: black;
-			font-size: 170%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -113,9 +103,12 @@
 			border-radius: 5px;
 		}
 
+		.coursesImg{
+			width: 33.33%;		
+		}
+
 		.coursesOverlay .coursesText {
 			color: black;
-			font-size: 120%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -124,6 +117,14 @@
 			transform: translate(-50%, -50%);
 			text-align: left;
 			transition: 0.5s ease;
+		}
+
+		.slidesContainer .slidesImg .slidesOverlay .slidesText{
+			font-size: 200%;
+		}
+
+		.coursesContainer .coursesImg .coursesOverlay .coursesText{
+			font-size: 220%;
 		}
 
 		@keyframes fadein {
@@ -145,7 +146,7 @@
 
 		@media screen and (max-width: 850px) {
 			.coursesContainer .coursesImg .coursesOverlay .coursesText{
-				font-size: 80%;
+				font-size: 150%;
 			}
 		}
 
@@ -162,48 +163,46 @@
 	<div class="slidesContainer">
 
 		<div class="slidesImg">
-			<a href="">
+			<a href="userForm.php">
 			<div class="slidesOverlay">
     			<div class="slidesText">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.
+					<center><b>Welcome, to The Cake Whisperer.</b></center>
 					<br><br>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, odio. Velit magni voluptate aspernatur voluptatibus asperiores fugit qui accusantium distinctio, reprehenderit in, nobis, maiores minima odio iure impedit ex quisquam.
+					Embark on a journey to discover the wonders of baking and cuisine.
 					<br><br>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt natus animi ad nam accusamus amet reiciendis? Cum consequatur consequuntur tempore! Deleniti error iste aperiam debitis nulla aut, ullam vitae.
+					We offer courses such as Baking Basics and Pastry Baking to people from all walks of life.
+					<br><br>
+					Click here to register as a new user or browse our different courses by clicking next.
 				</div>
   			</div>
 			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
+			<img src="images/baking2.jpg" >
 		</div>
 
 		<div class="slidesImg">
-			<a href="">
 			<div class="slidesOverlay">
     			<div class="slidesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum sit provident eaque, quasi minus fugit impedit officia natus deleniti omnis temporibus voluptatum ipsum numquam eligendi? Ullam aliquam architecto blanditiis.
+					<b>Baking Basics</b>
 					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quia eius odio possimus soluta doloremque incidunt in ad quas ipsa reprehenderit obcaecati laborum cupiditate quibusdam praesentium velit! Et, veritatis unde?
+					This course teaches you all the basics about baking that every beginner should master before tackling more advanced courses.
 					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident in, labore alias magni itaque impedit amet. Quis, labore nesciunt id obcaecati cum sunt dolores commodi unde ipsam, recusandae reiciendis.
+					Only RM100 a week for endless knowledge. Classes start every Monday.
 				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/aRNsxWJx1Agi5Fb7pdYiNa.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=3e845548f47cf36b31217361eb3299bb">
+  			</div><br>
+			<img src="images/bakingBasics.jpg">
 		</div>
 
 		<div class="slidesImg">
-			<a href="">
 			<div class="slidesOverlay">
     			<div class="slidesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque eveniet vero sapiente est qui. Aliquam quibusdam temporibus illum dignissimos veritatis, totam nesciunt accusantium, soluta quas repudiandae in blanditiis animi?
+				<b>Bread Baking</b>
 					<br><br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima voluptate commodi, fugiat fuga molestias quidem sequi, aperiam ipsum sapiente officia ullam culpa, consectetur nesciunt delectus qui consequatur excepturi nisi?
+					This course teaches you to bake breads that rival that of bakeries around you so that you will never buy any bread again, ever.
 					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga recusandae nostrum iure, fugiat porro magnam tempora ea maiores accusantium dolores provident modi perferendis harum labore velit placeat sed ipsum.
+					Only RM150 a week for everlasting homemade breads. Classes start every Tuesday.
 				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/_OjQhIl1uIPp5AWnDJcnTc.jpg?ixlib=java-2.1.0&w=1600&s=43e20da907eeeb30f0ec415a4fe884be">
+  			</div><br>
+			<img src="images/breadBaking.jpg">
 		</div>
 
 		<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -222,36 +221,34 @@
 	<br>
 
 	<div class="coursesContainer">
+
 		<div class="coursesImg">
-			<a href="">
 			<div class="coursesOverlay">
     			<div class="coursesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!
+					<b>Cake Decorations</b>
 				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
+  			</div><br>
+			<img src="images/cakeDecorations.jpg">
 		</div>
+
 		<div class="coursesImg">
-			<a href="">
 			<div class="coursesOverlay">
     			<div class="coursesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat eius eligendi, natus expedita fugiat, necessitatibus, harum ipsum corporis illum sequi soluta. Necessitatibus architecto nobis facilis molestiae sit harum dolorem!
+					<b>Cookies Baking</b>
 				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
+  			</div><br>
+			<img src="images/cookiesBaking.jpg">
 		</div>
+
 		<div class="coursesImg">
-			<a href="">
 			<div class="coursesOverlay">
     			<div class="coursesText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat expedita explicabo modi aut officiis, perferendis nemo officia impedit amet quia, delectus, cum voluptatem eveniet? Ab cupiditate laudantium obcaecati totam aliquid.
+					<b>Pastry Baking</b>
 				</div>
-  			</div>
-			</a><br>
-			<img src="https://img-cdn.hltv.org/gallerypicture/qYsvx0AQh8SnGQg1L0eUzB.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=e8c028b554da04af9aad283683b0ba1a">
+  			</div><br>
+			<img src="images/pastryBaking.jpg">
 		</div>
+
 	</div>
 
 	<br>
