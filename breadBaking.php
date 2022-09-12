@@ -24,13 +24,13 @@
         .description, .details{
             padding: 1%;
             font-size: 250%;
-            font-weight: bold;
             transition: 0.5s;
             background-color: rgba(235, 235, 235, 0.5);
             border-radius: 5px;
         }
 
         .details{
+            font-weight: bold;
             display: flex;
         }
 
