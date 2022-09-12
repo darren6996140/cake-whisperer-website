@@ -101,7 +101,7 @@
 
             <div class="info">
                 <p>Fee: RM<?php echo $row['fee'];?> / week</p>
-                <p>Time: Every Wednesday at <?php echo $row['time'];?></p>
+                <p>Time: Every Wednesday at <?php echo $row['time'];?> for 2 hours</p>
             </div>
 
             <?php }} ?>
