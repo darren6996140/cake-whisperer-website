@@ -20,7 +20,7 @@ include("headerUser.php");
 
 		$course1 = array_search("1", $courseRegistered);
         $course2 = array_search("2", $courseRegistered);
-        $course3 = array_search("3", $courseRegistered);	
+        $course3 = array_search("3", $courseRegistered);
         $course4 = array_search("4", $courseRegistered);
         $course5 = array_search("5", $courseRegistered);
 
@@ -31,7 +31,6 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo '<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -45,7 +44,6 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -59,7 +57,6 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -73,7 +70,6 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -87,7 +83,6 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -115,7 +110,7 @@ include("headerUser.php");
 			echo '<a href="courseForm.php">';
 			echo '<div class="coursesOverlay">';
 			echo '<div class="coursesText">';
-			echo 'Baking Basics';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -128,7 +123,7 @@ include("headerUser.php");
 			echo '<a href="courseForm.php">';
 			echo '<div class="coursesOverlay">';
 			echo '<div class="coursesText">';
-			echo 'Bread Baking';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -141,7 +136,7 @@ include("headerUser.php");
 			echo '<a href="courseForm.php">';
 			echo '<div class="coursesOverlay">';
 			echo '<div class="coursesText">';
-			echo 'Cake Decorations';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -154,7 +149,7 @@ include("headerUser.php");
 			echo '<a href="courseForm.php">';
 			echo '<div class="coursesOverlay">';
 			echo '<div class="coursesText">';
-			echo 'Cookies Baking';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -167,7 +162,7 @@ include("headerUser.php");
 			echo '<a href="courseForm.php">';
 			echo '<div class="coursesOverlay">';
 			echo '<div class="coursesText">';
-			echo 'Pastry Baking';
+			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -442,10 +437,6 @@ include("headerUser.php");
 	<div class="coursesContainer">
 		
 		<?php
-		//! attention (keep courses < 3 at bottom of page)
-		// if($numCourses < 3){
-		// }
-
 		if($course1 == ""){
             printCourse1Small();
         }
