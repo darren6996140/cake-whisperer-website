@@ -1,12 +1,12 @@
 <?php
 include("session.php");
 
-if ($class == 1){
+if ($class == 0){
     header('Location: mainpageAdmin.php');
     exit();
 }
 
-elseif ($class == 2){
+elseif ($class == 1){
     header('Location: mainpageUser.php');
     exit();
 }
