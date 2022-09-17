@@ -386,7 +386,7 @@ include("headerUser.php");
 <body>
 
 	<h1 class="bodyTitle">Your Registered Courses</h1>
-	
+
 	<div class="slidesContainer">
 
 		<?php
@@ -460,6 +460,8 @@ include("headerUser.php");
 	</div>
 
 	<br>
+
+	<h1 class="bodyTitle">Other Courses Offered</h1>
 
 	<div class="coursesContainer">
 		
