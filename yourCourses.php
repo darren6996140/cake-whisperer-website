@@ -23,12 +23,6 @@ include("headerUser.php");
         $course4 = array_search("4", $courseRegistered);
         $course5 = array_search("5", $courseRegistered);
 
-		$completed1 = 0;
-        $completed2 = 0;
-        $completed3 = 0;
-        $completed4 = 0;
-        $completed5 = 0;
-
         $numCourses = count($courseRegistered);
 
         function printCourse1(){
