@@ -23,52 +23,13 @@ include("headerUser.php");
         $course4 = array_search("4", $courseRegistered);
         $course5 = array_search("5", $courseRegistered);
 
+		$completed1 = 0;
+        $completed2 = 0;
+        $completed3 = 0;
+        $completed4 = 0;
+        $completed5 = 0;
+
         $numCourses = count($courseRegistered);
-
-        $mysql = "SELECT completed FROM regcourse WHERE email  = '$email' AND idCourse = 1 ";
-        $result = mysqli_query($conn, $mysql) or die(mysql_error());
-
-        if (mysqli_num_rows($result) > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                $completed1 = $row['completed'];
-            }
-        }
-
-        $mysql = "SELECT completed FROM regcourse WHERE email  = '$email' AND idCourse = 2 ";
-        $result = mysqli_query($conn, $mysql) or die(mysql_error());
-
-        if (mysqli_num_rows($result) > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                $completed2 = $row['completed'];
-            }
-        }
-
-        $mysql = "SELECT completed FROM regcourse WHERE email  = '$email' AND idCourse = 3 ";
-        $result = mysqli_query($conn, $mysql) or die(mysql_error());
-
-        if (mysqli_num_rows($result) > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                $completed3 = $row['completed'];
-            }
-        }
-
-        $mysql = "SELECT completed FROM regcourse WHERE email  = '$email' AND idCourse = 4 ";
-        $result = mysqli_query($conn, $mysql) or die(mysql_error());
-
-        if (mysqli_num_rows($result) > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                $completed4 = $row['completed'];
-            }
-        }
-
-        $mysql = "SELECT completed FROM regcourse WHERE email  = '$email' AND idCourse = 5 ";
-        $result = mysqli_query($conn, $mysql) or die(mysql_error());
-
-        if (mysqli_num_rows($result) > 0){
-            while($row = mysqli_fetch_assoc($result)){
-                $completed5 = $row['completed'];
-            }
-        }
 
         function printCourse1(){
 			echo '<div class="slidesImg">';
@@ -259,23 +220,23 @@ include("headerUser.php");
     <div class="slidesContainer">
 
         <?php
-        if($course1 != "" || $completed1 != ""){
+        if($course1 != ""){
                 printCourse1();
             }
 
-            if($course2 != "" || $completed2 != ""){
+            if($course2 != ""){
                 printCourse2();
             }
  
-            if($course3 != "" || $completed3 != ""){
+            if($course3 != ""){
                 printCourse3();
             }
 
-            if($course4 != "" || $completed4 != ""){
+            if($course4 != ""){
                 printCourse4();
             }
 
-            if($course5 != "" || $completed5 != ""){
+            if($course5 != ""){
                 printCourse5();
             }
         ?>
@@ -321,69 +282,6 @@ include("headerUser.php");
 			?>
 
 		</div>
-
-    </div>
-
-    <div class="slidesContainer">
-
-        <?php
-            if($completed1 == ""){
-                printCourse1();
-            }
-
-            if($completed2 == ""){
-                printCourse2();
-            }
-
-            if($completed3 == ""){
-                printCourse3();
-            }
-
-            if($completed4 == ""){
-                printCourse4();
-            }
-
-            if($completed5 == ""){
-                printCourse5();
-            }
-        ?>
-
-        <div style="text-align: center;">
-
-            <?php
-            if ($numCourses == 1){
-                echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-            }
-            elseif ($numCourses == 2){
-                echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';				
-            }
-            elseif ($numCourses == 3){
-                echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
-            }
-            elseif ($numCourses == 4){
-                echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(4)"></span>';
-            }
-            elseif ($numCourses == 5){
-                echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(4)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(5)"></span>';
-            }
-            else{
-                echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
-                echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
-            }		
-            ?>
-
-        </div>
 
     </div>
 
