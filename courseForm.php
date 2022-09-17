@@ -4,6 +4,9 @@
 <head>
 
     <?php
+    //todo
+    //! Shopping cart for more than one courses
+    //!Detection of clashing classes in shopping cart
 
     error_reporting(E_ERROR | E_PARSE);
 
