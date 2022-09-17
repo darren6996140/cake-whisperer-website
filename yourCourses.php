@@ -30,7 +30,7 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo '<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
+			//!tbd timetable & no. students
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -44,7 +44,7 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
+			//!tbd timetable & no. students
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -58,7 +58,7 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
+			//!tbd timetable & no. students
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -72,7 +72,7 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
+			//!tbd timetable & no. students
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -86,7 +86,7 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
+			//!tbd timetable & no. students
 			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
 			echo '</div>';
 			echo '</div>';
@@ -206,10 +206,26 @@ include("headerUser.php");
 			}
 		}
 
+		.bodyTitle{
+			color: black;
+			text-align: center;
+			font-size: 300%;
+			font-family: andale mono, monospace;
+			font-weight: bold;
+			background-color: rgba(255, 255, 255, 0.5);
+			margin-left: 25%;
+			margin-right: 25%;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			border-radius: 5px;
+		}
+
 	</style>
 </head>
 
 <body>
+
+	<h1 class="bodyTitle">Your Registered Courses</h1>
 
     <div class="slidesContainer">
 
