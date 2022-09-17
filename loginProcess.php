@@ -21,7 +21,7 @@ if(isset($_POST['login']))
 		$name = $row['name'];
 	
 		echo '<script>alert("Welcome '.$name.'");
-			window.location.href="mainpageUser.php";</script>';
+			window.location.href="redirect.php";</script>';
 	}
 	else
 	{
