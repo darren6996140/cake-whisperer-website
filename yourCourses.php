@@ -97,7 +97,7 @@ include("headerUser.php");
 
     ?>
 
-<style>
+	<style>
 		.slidesImg img{
 			display: block;
 			width: 70%;
