@@ -272,7 +272,6 @@ include("headerUser.php");
 
 		.slidesOverlay .slidesText {
 			color: black;
-			font-size: 170%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -307,7 +306,6 @@ include("headerUser.php");
 
 		.coursesOverlay .coursesText {
 			color: black;
-			font-size: 120%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -316,6 +314,14 @@ include("headerUser.php");
 			transform: translate(-50%, -50%);
 			text-align: left;
 			transition: 0.5s ease;
+		}
+
+		.slidesContainer .slidesImg .slidesOverlay .slidesText{
+			font-size: 200%;
+		}
+
+		.coursesContainer .coursesImg .coursesOverlay .coursesText{
+			font-size: 220%;
 		}
 
 		@keyframes fadein {
@@ -337,7 +343,7 @@ include("headerUser.php");
 
 		@media screen and (max-width: 850px) {
 			.coursesContainer .coursesImg .coursesOverlay .coursesText{
-				font-size: 80%;
+				font-size: 150%;
 			}
 		}
 
@@ -359,12 +365,28 @@ include("headerUser.php");
 			?>
 		}
 
+		.bodyTitle{
+			color: black;
+			text-align: center;
+			font-size: 300%;
+			font-family: andale mono, monospace;
+			font-weight: bold;
+			background-color: rgba(255, 255, 255, 0.5);
+			margin-left: 25%;
+			margin-right: 25%;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			border-radius: 5px;
+		}
+
 	</style>
 	
 </head>
 
 <body>
 
+	<h1 class="bodyTitle">Your Registered Courses</h1>
+	
 	<div class="slidesContainer">
 
 		<?php
