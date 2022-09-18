@@ -81,7 +81,7 @@
     <?php
         include("session.php");
 
-        $mysql = "SELECT * FROM course WHERE name  = 'Cake Decorations'";
+        $mysql = "SELECT * FROM course WHERE courseName  = 'Cake Decorations'";
         $result = mysqli_query($conn, $mysql) or die(mysql_error());
 
         if (mysqli_num_rows($result) > 0){
