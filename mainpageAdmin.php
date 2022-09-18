@@ -27,13 +27,40 @@ include("session.php");
 			border-radius: 5px;
 			text-decoration: none;
 			color: black;
+			display: flex;
 		}
 
-		.header h1
+		.header .title
+		{
+			padding: 2%;
+			flex: 80%;
+		}
+
+		.header .title h1
 		{
 			margin-top: 0px;
 			margin-bottom: 0px;
-			padding: 2%;
+			padding-left: 20%;
+		}
+
+		.header .logout
+		{
+			flex: 20%;
+			font-size: 150%;
+	  		cursor: pointer;
+  			color: black;
+			padding: 30px 0px 30px 15px;
+			border-radius: 8px;
+		}
+
+		.header .logout a
+		{
+			color: red;
+		}
+
+		.header .logout a:hover{
+			color: rgba(255, 0, 0, 0.5);
+			transition: 0.3s;
 		}
 
 	</style>
@@ -43,7 +70,8 @@ include("session.php");
 <body>
 
 	<div class="header">
-		<h1>The Cake Whisperer</h1>
+		<div class="title"><h1>The Cake Whisperer</h1></div>
+		<div class="logout"><a href="logout.php">Log Out</a></div>
 	</div>
 
 	<center><h1>Salam Admin</h1></center>
