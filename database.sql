@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2022 at 11:00 AM
+-- Generation Time: Sep 18, 2022 at 11:27 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `course` (
   `idCourse` int(5) NOT NULL,
-  `name` varchar(20) NOT NULL,
+  `courseName` varchar(20) NOT NULL,
   `fee` int(5) NOT NULL,
   `time` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -38,12 +38,12 @@ CREATE TABLE `course` (
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`idCourse`, `name`, `fee`, `time`) VALUES
-(1, 'Baking Basics', 100, '00:00:00'),
-(2, 'Bread Baking', 150, '00:00:00'),
-(3, 'Cake Decorations', 250, '00:00:00'),
-(4, 'Cookies Baking', 125, '00:00:00'),
-(5, 'Pastry Baking', 170, '00:00:00');
+INSERT INTO `course` (`idCourse`, `courseName`, `fee`, `time`) VALUES
+(1, 'Baking Basics', 100, '12:00:00'),
+(2, 'Bread Baking', 150, '15:00:00'),
+(3, 'Cake Decorations', 250, '13:00:00'),
+(4, 'Cookies Baking', 125, '16:00:00'),
+(5, 'Pastry Baking', 170, '10:00:00');
 
 -- --------------------------------------------------------
 
@@ -55,7 +55,7 @@ CREATE TABLE `regcourse` (
   `id` int(50) NOT NULL,
   `email` varchar(100) NOT NULL,
   `idCourse` int(5) NOT NULL,
-  `duration` int(5) NOT NULL
+  `duration` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -63,9 +63,8 @@ CREATE TABLE `regcourse` (
 --
 
 INSERT INTO `regcourse` (`id`, `email`, `idCourse`, `duration`) VALUES
-(1, 'liaukaize', 5, 2),
-(2, 'liaukaize', 2, 4),
-(3, 'liaukaize', 1, 1);
+(1, 'liaukaize', 1, 2),
+(2, 'liaukaize', 4, 2);
 
 -- --------------------------------------------------------
 
@@ -78,7 +77,7 @@ CREATE TABLE `user` (
   `name` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `noPhone` varchar(12) NOT NULL,
-  `class` int(1) NOT NULL
+  `class` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -86,8 +85,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`email`, `name`, `password`, `noPhone`, `class`) VALUES
-('admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '000000000', 1),
-('liaukaize', 'barbie', '84d9c4b849506b6d8f8075a9000e7e0a254be71060ea889fad3c88395988f4fc', '999', 2);
+('admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'admin', 0),
+('liaukaize', 'barbie', '84d9c4b849506b6d8f8075a9000e7e0a254be71060ea889fad3c88395988f4fc', '999', 1);
 
 --
 -- Indexes for dumped tables
@@ -127,7 +126,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `regcourse`
 --
 ALTER TABLE `regcourse`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
