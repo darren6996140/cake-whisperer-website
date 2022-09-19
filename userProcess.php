@@ -21,7 +21,7 @@ else{
 
 	$mysql= "INSERT INTO user
 	(email, password, name, noPhone, class)
-	VALUES ('$email', '$password', '$name', '$noPhone' , 2)";
+	VALUES ('$email', '$password', '$name', '$noPhone' , 1)";
 	
 if (mysqli_query($conn, $mysql)){
 
