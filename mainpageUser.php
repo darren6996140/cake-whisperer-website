@@ -96,13 +96,12 @@ include("headerUser.php");
 			echo '</div>';
 		}
 
-		//!tbd
 		function printDefaultBig(){
 			echo '<div class="slidesImg">';
-			echo '<a href="">';
+			echo '<a href="courseForm.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'It seems like you are not registered to any classes yet, click here to register to our classes now!';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -172,20 +171,6 @@ include("headerUser.php");
 			echo '</div>';
 			echo '</a><br>';
 			echo '<img src="images/pastryBaking.jpg">';
-			echo '</div>';
-		}
-
-		//!tbd
-		function printDefaultSmall(){
-			echo '<div class="coursesImg">';
-			echo '<a href="courseForm.php">';
-			echo '<div class="coursesOverlay">';
-			echo '<div class="coursesText">';
-			echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, cum necessitatibus qui maxime repellendus ex sequi praesentium nostrum rem optio laborum eius earum aliquid, dicta porro quasi nobis, nesciunt veritatis!';
-			echo '</div>';
-			echo '</div>';
-			echo '</a><br>';
-			echo '<img src="images/baking1.jpg">';
 			echo '</div>';
 		}
 
@@ -287,7 +272,13 @@ include("headerUser.php");
 			height: 110%;
 
 			<?php
-			if($numCourses == 2){
+			if($numCourses == 0){
+				echo 'width: 20%;';
+			}
+			elseif($numCourses == 1){
+				echo 'width: 25%;';
+			}
+			elseif($numCourses == 2){
 				echo 'width: 33.33%;';
 			}
 			elseif($numCourses == 3){
@@ -353,7 +344,13 @@ include("headerUser.php");
 
 		.coursesImg{
 			<?php
-			if($numCourses == 2){
+			if($numCourses == 0){
+				echo 'width: 20%;';
+			}
+			elseif($numCourses == 1){
+				echo 'width: 25%;';
+			}
+			elseif($numCourses == 2){
 				echo 'width: 33.33%;';
 			}
 			elseif($numCourses == 3){
@@ -450,8 +447,6 @@ include("headerUser.php");
 			}
 			else{
 				echo '<span class="selectionDot" onclick="currentSlide(1)"></span>';
-				echo '<span class="selectionDot" onclick="currentSlide(2)"></span>';
-				echo '<span class="selectionDot" onclick="currentSlide(3)"></span>';
 			}		
 			?>
 
