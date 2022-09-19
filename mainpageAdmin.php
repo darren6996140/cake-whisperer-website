@@ -170,6 +170,7 @@ include("session.php");
 			<center>
 			<form action="" method="POST">
 				<select name="orderUser" class="order" required>
+					<option value="">Sort By</option>
 					<option value="name">Name</option>
 					<option value="email">Email</option>
 					<option value="phone">Phone Number</option>
@@ -186,11 +187,7 @@ include("session.php");
 		if(isset($_POST['findUser']))
 		{
 
-			if($_POST['orderUser'] == ""){
-				exit();
-			}
-
-			elseif($_POST['orderUser'] == "email"){
+			if($_POST['orderUser'] == "email"){
 				$query = "SELECT * FROM user WHERE class=1 ORDER BY email";
 			}
 
@@ -233,7 +230,7 @@ include("session.php");
 		}
 
 		else{
-			echo"";
+			echo"<h1><u>No data</u></h1>";
 		}
 
 		?>
@@ -253,10 +250,12 @@ include("session.php");
 			<center>
 			<form action="" method="POST">
 				<select name="orderCourses" class="order" required>
+					<option value="">Sort By</option>
 					<option value="email">Email</option>
 					<option value="duration">Duration</option>
 				</select>
 				<select name="filterCourses" class="order" required>
+					<option value="">Filter By</option>
 					<option value=1>Baking Basics</option>
 					<option value=2>Bread Baking</option>
 					<option value=3>Cake Decorations</option>
@@ -277,12 +276,8 @@ include("session.php");
 
 		if(isset($_POST['findCourses']))
 		{
-
-			if($_POST['orderCourses'] == ""){
-				exit();
-			}
 			
-			elseif($_POST['orderCourses'] == "email"){
+			if($_POST['orderCourses'] == "email"){
 				$query = "SELECT regcourse.id, regcourse.email, user.name, course.courseName, regcourse.duration FROM regcourse INNER JOIN user ON regcourse.email = user.email INNER JOIN course ON regcourse.idCourse = course.idCourse WHERE regcourse.idCourse = '$courseNumber' ORDER BY email";
 			}
 			
@@ -326,7 +321,7 @@ include("session.php");
 		}
 		
 		else{
-			echo"";
+			echo"<h1><u>No data</u></h1>";
 		}
 		
 		?>
