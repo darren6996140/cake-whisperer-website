@@ -223,7 +223,7 @@ include("session.php");
 				echo "<td>".$row['email']."</td>";
 				echo "<td>".$row['name']."</td>";
 				echo "<td>".$row['noPhone']."</td>";
-				echo " </tr>";
+				echo "</tr>";
 			}
 
 			echo"</table>";
@@ -314,7 +314,7 @@ include("session.php");
 				echo "<td>".$row['name']."</td>";
 				echo "<td>".$row['courseName']."</td>";
 				echo "<td>".$row['duration']."</td>";
-				echo " </tr>";
+				echo "</tr>";
 			}
 
 			echo"</table>";
