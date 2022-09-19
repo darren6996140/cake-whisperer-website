@@ -169,8 +169,7 @@ include("session.php");
 		<div class="userForm">
 			<center>
 			<form action="" method="POST">
-				<select name="orderUser" class="order">
-					<option>Order By</option>
+				<select name="orderUser" class="order" required>
 					<option value="name">Name</option>
 					<option value="email">Email</option>
 					<option value="phone">Phone Number</option>
@@ -208,9 +207,7 @@ include("session.php");
 			}
 		}
 
-		
-		$mysql = $query;
-		$result = mysqli_query($conn, $mysql) or die(mysql_error());
+		$result = mysqli_query($conn, $query) or die(mysql_error());
 
 		if (mysqli_num_rows ($result) > 0)
 		{
@@ -255,13 +252,11 @@ include("session.php");
 		<div class="coursesForm">
 			<center>
 			<form action="" method="POST">
-				<select name="orderCourses" class="order">
-					<option>Order By</option>
+				<select name="orderCourses" class="order" required>
 					<option value="email">Email</option>
 					<option value="duration">Duration</option>
 				</select>
-				<select name="filterCourses" class="order">
-					<option>Filter By</option>
+				<select name="filterCourses" class="order" required>
 					<option value=1>Baking Basics</option>
 					<option value=2>Bread Baking</option>
 					<option value=3>Cake Decorations</option>
@@ -275,11 +270,10 @@ include("session.php");
 
 		<?php
 		
-		$query = "SELECT * FROM regcourse WHERE idCourse=0";
+		$query = "SELECT * FROM regcourse WHERE idCourse=0;";
 
 		error_reporting(E_ERROR | E_PARSE);
 		$courseNumber = $_POST['filterCourses'];
-		echo $courseNumber;
 
 		if(isset($_POST['findCourses']))
 		{
@@ -287,17 +281,13 @@ include("session.php");
 			if($_POST['orderCourses'] == ""){
 				exit();
 			}
-			//!!!
+			
 			elseif($_POST['orderCourses'] == "email"){
-				$query = "SELECT * FROM regcourse WHERE idCourse = $courseNumber ORDER BY email;
-				SELECT user.name FROM user INNER JOIN regcourse ON user.email = regcourse.email;
-				SELECT course.courseName FROM course INNER JOIN regcourse ON course.idCourse = regcourse.idCourse;";
+				$query = "SELECT regcourse.id, regcourse.email, user.name, course.courseName, regcourse.duration FROM regcourse INNER JOIN user ON regcourse.email = user.email INNER JOIN course ON regcourse.idCourse = course.idCourse WHERE regcourse.idCourse = '$courseNumber' ORDER BY email";
 			}
-			//!!!
+			
 			elseif($_POST['orderCourses'] == "duration"){
-				$query = "SELECT * FROM regcourse WHERE idCourse = $courseNumber ORDER BY duration;
-				SELECT user.name FROM user INNER JOIN regcourse ON user.email = regcourse.email;
-				SELECT course.courseName FROM course INNER JOIN regcourse ON course.idCourse = regcourse.idCourse;";
+				$query = "SELECT regcourse.id, regcourse.email, user.name, course.courseName, regcourse.duration FROM regcourse INNER JOIN user ON regcourse.email = user.email INNER JOIN course ON regcourse.idCourse = course.idCourse WHERE regcourse.idCourse = '$courseNumber' ORDER BY duration";
 			}
 
 			else{
@@ -305,8 +295,7 @@ include("session.php");
 			}
 		}
 		
-		$mysql = $query;
-		$result = mysqli_query($conn, $mysql) or die(mysql_error());
+		$result = mysqli_query($conn, $query) or die(mysql_error());
 
 		if (mysqli_num_rows ($result) > 0)
 		{
@@ -335,11 +324,11 @@ include("session.php");
 
 			echo"</table>";
 		}
-
+		
 		else{
 			echo"";
 		}
-
+		
 		?>
 
 		<br>
