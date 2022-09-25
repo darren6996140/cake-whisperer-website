@@ -31,8 +31,9 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo '<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'You are registered to: <b>Baking Basics</b>';
+			echo '<br>';
+			echo 'Click here to check the timetable for this course.';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -45,8 +46,9 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'You are registered to: <b>Bread Baking</b>';
+			echo '<br>';
+			echo 'Click here to check the timetable for this course.';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -59,8 +61,9 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'You are registered to: <b>Cake Decorations</b>';
+			echo '<br>';
+			echo 'Click here to check the timetable for this course.';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -73,8 +76,9 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'You are registered to: <b>Cookies Baking</b>';
+			echo '<br>';
+			echo 'Click here to check the timetable for this course.';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -87,8 +91,9 @@ include("headerUser.php");
 			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'You are registered to: <b>Pastry Baking</b>';
+			echo '<br>';
+			echo 'Click here to check the timetable for this course.';
 			echo '</div>';
 			echo '</div>';
 			echo '</a><br>';
@@ -461,9 +466,6 @@ include("headerUser.php");
 	<div class="coursesContainer">
 		
 		<?php
-		//! attention (keep courses < 3 at bottom of page)
-		// if($numCourses < 3){
-		// }
 
 		if($course1 == ""){
             printCourse1Small();
@@ -485,9 +487,6 @@ include("headerUser.php");
             printCourse5Small();
         }
 
-		// else{
-		// 	printDefaultSmall();
-		// }
 		?>
 
 	</div>
