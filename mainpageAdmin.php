@@ -134,21 +134,6 @@ include("session.php");
 			padding: 20px 10px;
 		}
 
-		.user .manage, .courses .manage{
-			font-size: 150%;
-			text-align: center;
-			font-weight: bold;
-			text-decoration: underline;
-			color: rgb(75, 171, 255);
-			transition: 0.3s;
-			border-style: solid;
-            border-width: 1px;
-		}
-
-		.user .manage:hover, .courses .manage:hover{
-			color: rgba(75, 171, 255, 0.5);
-		}
-
 	</style>
 	
 </head>
@@ -234,9 +219,6 @@ include("session.php");
 		}
 
 		?>
-
-		<br>
-		<a href="manageUser.php" class="manage">Manage</a>
 	
 	</div>
 
@@ -325,9 +307,6 @@ include("session.php");
 		}
 		
 		?>
-
-		<br>
-		<a href="manageCourses.php" class="manage">Manage</a>
 
 	</div>
 
