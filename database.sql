@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2022 at 11:27 AM
+-- Generation Time: Oct 01, 2022 at 07:43 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -58,14 +58,6 @@ CREATE TABLE `regcourse` (
   `duration` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `regcourse`
---
-
-INSERT INTO `regcourse` (`id`, `email`, `idCourse`, `duration`) VALUES
-(1, 'liaukaize', 1, 2),
-(2, 'liaukaize', 4, 2);
-
 -- --------------------------------------------------------
 
 --
@@ -86,6 +78,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`email`, `name`, `password`, `noPhone`, `class`) VALUES
 ('admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'admin', 0),
+('liau', 'pp', '84d9c4b849506b6d8f8075a9000e7e0a254be71060ea889fad3c88395988f4fc', '911', 1),
 ('liaukaize', 'barbie', '84d9c4b849506b6d8f8075a9000e7e0a254be71060ea889fad3c88395988f4fc', '999', 1);
 
 --
@@ -126,7 +119,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `regcourse`
 --
 ALTER TABLE `regcourse`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- Constraints for dumped tables
