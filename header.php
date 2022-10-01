@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lightTheme">
 <head>
 	
 	<title>The Cake Whisperer</title>
@@ -77,7 +77,6 @@
 		}
 
 		.header .login{
-			color: rgb(75, 171, 255);
 			text-decoration: underline;
 		}
 
@@ -134,7 +133,7 @@
 		}
 
 		.close:hover{
-			color: rgba(0, 0, 0, 0.500);
+			color: rgba(0, 0, 0, 0.5);
 			transition: 0.2s;
 		}
 
@@ -144,12 +143,12 @@
 		}
 
 		.sidebar a:hover{
-			color: rgba(0, 0, 0, 0.500);
+			color: rgba(0, 0, 0, 0.5);
 			transition: 0.2s;
 		}
 
 		.center a:hover{
-			color: rgba(0, 0, 0, 0.500);
+			color: rgba(0, 0, 0, 0.5);
 			transition: 0.2s;
 		}
 
