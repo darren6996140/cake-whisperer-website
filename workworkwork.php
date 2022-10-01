@@ -27,8 +27,9 @@
             font-weight: bold;
             text-align: center;
             transition: 0.5s;
-            background-color: rgba(235, 235, 235, 0.5);
+            background-color: var(--background);
             border-radius: 5px;
+            color: var(--text);
         }
 
         @media screen and (max-width: 850px) {

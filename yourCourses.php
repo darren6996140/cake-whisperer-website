@@ -119,7 +119,7 @@ include("headerUser.php");
 			width: auto;
 			padding: 16px;
 			margin-top: -22px;
-			color: black;
+			color: var(--text);
 			font-weight: bold;
 			font-size: 250%;
 			transition: 0.3s ease;
@@ -133,7 +133,7 @@ include("headerUser.php");
 		}
 
 		.prev:hover, .next:hover {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: var(--arrowHover);
 		}
 
 		.slidesContainer .selectionDot {
@@ -162,12 +162,12 @@ include("headerUser.php");
 			width: 100%;
 			opacity: 0;
 			transition: 0.5s ease;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: var(--overlay);
 			border-radius: 5px;
 		}
 
 		.slidesOverlay .slidesText {
-			color: black;
+			color: var(--text);
 			font-size: 250%;
 			position: absolute;
 			top: 50%;
@@ -196,12 +196,12 @@ include("headerUser.php");
 		}
 
 		.bodyTitle{
-			color: black;
+			color: var(--text);
 			text-align: center;
 			font-size: 300%;
 			font-family: andale mono, monospace;
 			font-weight: bold;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: var(--overlay);
 			margin-left: 25%;
 			margin-right: 25%;
 			padding-top: 2%;
@@ -213,9 +213,10 @@ include("headerUser.php");
             padding: 10px;
             border: 1px solid black;
 			text-align: center;
-			background-color: rgb(235, 235, 235);
+			background-color: var(--table);
 			margin: 0px 25%;
 			border-radius: 5px;
+			color: var(--text);
         }
 
 		.timetable td{ 
@@ -223,11 +224,11 @@ include("headerUser.php");
 			height: 25px;
 			font-size: 100%;
 			padding: 10px 20px;
-			background-color: #ebebeb;
+			background-color: var(--table);
 		}
 
 		.timetable .time{ 
-			background-color: #ebebeb;
+			background-color: var(--table);
 		}
 
 		.timetable .class{ 

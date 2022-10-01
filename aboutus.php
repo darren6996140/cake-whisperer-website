@@ -24,8 +24,9 @@
         .aboutus{
             padding: 2%;
             font-size: 200%;
-            background-color: rgba(235, 235, 235, 0.5);
+            background-color: var(--background);
             border-radius: 5px;
+            color: var(--text);
         }
 
         @media screen and (max-width: 850px) {

@@ -25,8 +25,9 @@
             padding: 1%;
             font-size: 250%;
             transition: 0.5s;
-            background-color: rgba(235, 235, 235, 0.5);
+            background-color: var(--background);
             border-radius: 5px;
+            color: var(--text);
         }
 
         .details{

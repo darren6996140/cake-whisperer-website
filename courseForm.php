@@ -22,9 +22,10 @@
 
     <style>
         .courseForm {
-            background-color: rgba(235, 235, 235, 0.5);
+            background-color: var(--background);
             padding-bottom: 20px;
             border-radius: 5px;
+            color: var(--text);
         }
 
         .courseForm .title p {
@@ -41,7 +42,7 @@
             border-radius: 5px;
             border-collapse: collapse;
             margin: auto;
-            background-color: rgb(235, 235, 235);
+            background-color: var(--table);
         }
 
         .courseForm table, .courseForm td {
@@ -73,7 +74,7 @@
         }
 
         .courseForm .button:hover {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: var(--overlay);
         }
 
         .courseForm a {

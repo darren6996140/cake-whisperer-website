@@ -4,8 +4,8 @@
 
 <style>
 	.footer {
-		color: black;
-		background: rgba(235, 235, 235, 0.5);
+		color: var(--text);
+		background: var(--background);
 		display: flex;
 		font-family: andale mono, monospace;
 		border-radius: 8px;

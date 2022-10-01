@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lightTheme">
 <head>
 	
 	<title>The Cake Whisperer</title>
@@ -20,14 +20,32 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
-		} 
+		}
+
+		.lightTheme {  
+			--text: black;
+			--background: rgba(235, 235, 235, 0.5);
+			--sidebarBackground: rgba(235, 235, 235, 0.95);
+			--overlay: rgba(255, 255, 255, 0.5);
+			--arrowHover: rgba(0, 0, 0, 0.3);
+			--table: rgba(235, 235, 235);
+		}
+
+		.darkTheme {  
+			--text: white;
+			--background: rgba(50, 50, 50, 0.5);
+			--sidebarBackground: rgba(50, 50, 50, 0.95);
+			--overlay: rgba(50, 50, 50, 0.5);
+			--arrowHover: rgba(235, 235, 235, 0.3);
+			--table: rgba(50, 50, 50);
+		}
 
 		.header
 		{
 			display: flex;
 			font-family: andale mono, monospace;
 			font-size: 170%;
-			background: rgba(235, 235, 235, 0.5);
+			background: var(--background);
 			text-align: center;
 			transition: 0.5s;
 			border-radius: 8px;
@@ -41,13 +59,13 @@
 		.header .center
 		{
 			flex: 82%;
-			color: black;
+			color: var(--text);
 			border-radius: 8px;
 		}
 
 		.header .center a
 		{
-			color: black;
+			color: var(--text);
 			text-decoration: none;
 		}
 
@@ -56,14 +74,14 @@
 			flex: 9%;
 			font-size: 170%;
 	  		cursor: pointer;
-  			color: black;
+  			color: var(--text);
 			padding: 30px 25px 30px 15px;
 			border-radius: 8px;
 		}
 
 		.header .right a
 		{
-			color: black;
+			color: var(--text);
 		}
 
 
@@ -71,7 +89,7 @@
 			font-size: 170%;
 	  		cursor: pointer;
   			background-color: rgba(235, 235, 235, 0.0);
-  			color: black;
+  			color: var(--text);
   			padding: 30px 15px;
   			border: none;
 			border-radius: 8px;
@@ -94,7 +112,7 @@
 			width: 0;
 			top: 0;
 			left: 0;
-			background-color: rgba(235, 235, 235, 0.95);
+			background-color: var(--sidebarBackground);
 			overflow-x: hidden;
 			transition: 0.5s;
 			padding-top: 60px;
@@ -118,7 +136,7 @@
 			transition: 0.5s;
 			cursor: pointer;
 			background-color: rgba(235, 235, 235, 0.0);
-  			color: black;
+  			color: var(--text);
 			border: none;
 			padding: 10px 0px;
 		}
@@ -165,6 +183,7 @@
 			transition: 0.5s;
 			cursor: pointer;
 			overflow-wrap: normal;
+			color: var(--text);
 		}
 
 		.show {
@@ -180,7 +199,7 @@
 			display: none;
 			position: absolute;
 			right: -60px;
-			background-color: rgb(235, 235, 235);
+			background-color: var(--sidebarBackground);
 			min-width: 160px;
 			overflow: visible;
 			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -193,7 +212,7 @@
 		}
 
 		.dropdownContent a {
-			color: black;
+			color: var(--text);
 			padding: 12px 16px;
 			text-decoration: none;
 			display: block;
@@ -242,9 +261,7 @@
 		<img src="images/defaultProfile.png" alt="profile picture" class="profile" onclick="dropdown()">
 			<div id="dropdownContent" class="dropdownContent">
 				<a href="yourCourses.php">Your Courses</a>
-				<a href="#">Settings</a>
-				<a href="#">Language</a>
-				<a href="#" class="theme">&#9789; Change Theme</a>
+				<a href="#" class="theme" onclick="toggleTheme()">&#9789; Change Theme</a>
 				<a href="logout.php" style="color: red">Log Out</a>
 			</div>
 		</div>
@@ -285,9 +302,31 @@
 		}
 	}
 
+	function setTheme(themeName) {
+		localStorage.setItem('theme', themeName);
+		document.documentElement.className = themeName;
+	}
+
+	function toggleTheme() {
+		if (localStorage.getItem('theme') === 'darkTheme'){
+			setTheme('lightTheme');
+		} 
+		else {
+			setTheme('darkTheme');
+		}
+	}
+
+	(function () {
+            if (localStorage.getItem('theme') === 'darkTheme') {
+                setTheme('darkTheme');
+            } else {
+                setTheme('lightTheme');
+            }
+        })();
+
 	</script>
 	
-	<br> 
+	<br>
 
 </body>
 </html>
