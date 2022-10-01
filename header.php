@@ -10,6 +10,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
+		.lightTheme {  
+			--text: black;
+			--background: rgba(235, 235, 235, 0.5);
+			--sidebarBackground: rgba(235, 235, 235, 0.95);
+			--overlay: rgba(255, 255, 255, 0.5);
+			--arrowHover: rgba(0, 0, 0, 0.3);
+			--table: rgba(235, 235, 235);
+		}
 
 		body
 		{

@@ -10,18 +10,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
-
-		body
-		{
-			padding: 10px;
-			font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-			margin: 0;
-			background-image: url('images/baking<?php echo(rand(0,4)); ?>.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-		}
-
 		.lightTheme {  
 			--text: black;
 			--background: rgba(235, 235, 235, 0.5);
@@ -38,6 +26,17 @@
 			--overlay: rgba(50, 50, 50, 0.5);
 			--arrowHover: rgba(235, 235, 235, 0.3);
 			--table: rgba(50, 50, 50);
+		}
+
+		body
+		{
+			padding: 10px;
+			font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+			margin: 0;
+			background-image: url('images/baking<?php echo(rand(0,4)); ?>.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
 		}
 
 		.header
