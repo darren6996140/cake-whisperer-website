@@ -27,70 +27,65 @@ include("headerUser.php");
 
         function printCourse1(){
 			echo '<div class="slidesImg">';
-			echo '<a href="yourCourses.php">';
 			echo '<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd timetable & no. students
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'Baking Basics';
+			echo '<br><br>';
+			echo '1200 hours - 1400 hours';
 			echo '</div>';
 			echo '</div>';
-			echo '</a><br>';
 			echo '<img src="images/bakingBasics.jpg">';
 			echo '</div>';
 		}
 
 		function printCourse2(){
 			echo '<div class="slidesImg">';
-			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd timetable & no. students
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'Bread Baking';
+			echo '<br><br>';
+			echo '1500 hours - 1700 hours';
 			echo '</div>';
 			echo '</div>';
-			echo '</a><br>';
 			echo'<img src="images/breadBaking.jpg">';
 			echo '</div>';
 		}
 
 		function printCourse3(){
 			echo '<div class="slidesImg">';
-			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd timetable & no. students
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'Cake Decorations';
+			echo '<br><br>';
+			echo '1300 hours - 1500 hours';
 			echo '</div>';
 			echo '</div>';
-			echo '</a><br>';
 			echo'<img src="images/cakeDecorations.jpg">';
 			echo '</div>';
 		}
 
 		function printCourse4(){
 			echo '<div class="slidesImg">';
-			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd timetable & no. students
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'Cookies Baking';
+			echo '<br><br>';
+			echo '1600 hours - 1800 hours';
 			echo '</div>';
 			echo '</div>';
-			echo '</a><br>';
 			echo'<img src="images/cookiesBaking.jpg">';
 			echo '</div>';
 		}
 
 		function printCourse5(){
 			echo '<div class="slidesImg">';
-			echo '<a href="yourCourses.php">';
 			echo'<div class="slidesOverlay">';
 			echo '<div class="slidesText">';
-			//!tbd timetable & no. students
-			echo 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis magni blanditiis quo ullam obcaecati quam similique voluptates fuga illo molestiae earum amet odio, soluta in excepturi, temporibus hic repellat ipsam.';
+			echo 'Pastry Baking';
+			echo '<br><br>';
+			echo '1000 hours - 1200 hours';
 			echo '</div>';
 			echo '</div>';
-			echo '</a><br>';
 			echo'<img src="images/pastryBaking.jpg">';
 			echo '</div>';
 		}
@@ -117,7 +112,6 @@ include("headerUser.php");
 			border-radius: 5px;
 		}
 
-		/* Next & previous buttons */
 		.prev, .next {
 			cursor: pointer;
 			position: absolute;
@@ -133,18 +127,15 @@ include("headerUser.php");
 			user-select: none;
 		}
 
-		/* Position the "next button" to the right */
 		.next {
 			right: 0;
 			border-radius: 3px 0 0 3px;
 		}
 
-		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover, .next:hover {
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 
-		/* The dots/bullets/indicators */
 		.slidesContainer .selectionDot {
 			cursor: pointer;
 			height: 15px;
@@ -156,7 +147,6 @@ include("headerUser.php");
 			transition: background-color 0.5s ease;
 		}
 
-		/* slight issue here */
 		.active, .selectionDot:hover {
 			background-color: rgb(113, 113, 113);
 		}
@@ -178,7 +168,7 @@ include("headerUser.php");
 
 		.slidesOverlay .slidesText {
 			color: black;
-			font-size: 170%;
+			font-size: 250%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -199,7 +189,6 @@ include("headerUser.php");
 			}
 		}
 
-		/* On smaller screens, decrease text size */
 		@media screen and (max-width: 850px) {
 			.prev, .next, .slidesContainer .slidesImg .slidesOverlay .slidesText{
 				font-size: 100%;
@@ -220,6 +209,39 @@ include("headerUser.php");
 			border-radius: 5px;
 		}
 
+		.timetable{
+            padding: 10px;
+            border: 1px solid black;
+			text-align: center;
+			background-color: rgb(235, 235, 235);
+			margin: 0px 25%;
+			border-radius: 5px;
+        }
+
+		.timetable td{ 
+			text-align: center;
+			height: 25px;
+			font-size: 100%;
+			padding: 10px 20px;
+			background-color: #ebebeb;
+		}
+
+		.timetable .time{ 
+			background-color: #ebebeb;
+		}
+
+		.timetable .class{ 
+			background-color: #bbb;
+		}
+
+		.timetable th{
+			font-size: 150%;
+			text-align: center;
+			font-weight: bold;
+			text-decoration: underline;
+			padding: 20px 10px;
+		}
+
 	</style>
 </head>
 
@@ -230,7 +252,7 @@ include("headerUser.php");
     <div class="slidesContainer">
 
         <?php
-        if($course1 != ""){
+			if($course1 != ""){
                 printCourse1();
             }
 
@@ -254,7 +276,7 @@ include("headerUser.php");
         <a class="prev" onclick="plusSlides(-1)">❮</a>
 		<a class="next" onclick="plusSlides(1)">❯</a>
 
-		<br>
+		<br><br>
 
 		<div style="text-align: center;">
 
@@ -293,7 +315,169 @@ include("headerUser.php");
 
 		</div>
 
+		<br><br>
+
     </div>
+
+	<div class="timetable">
+			<center>
+			<table class='table'>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+
+				<th>Time</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+
+				<tr>
+					<td class="time">10:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<?php
+					if($course5 != ""){
+						echo'<td class="class">Pastry Baking</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+				</tr><tr>
+					<td class="time">11:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<?php
+					if($course5 != ""){
+						echo'<td class="class">10:00 - 12:00</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+				</tr><tr>
+					<td class="time">12:00</td>
+					<?php
+					if($course1 != ""){
+						echo'<td class="class">Baking Basics</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr><tr>
+
+					<td class="time">13:00</td>
+					<?php
+					if($course1 != ""){
+						echo'<td class="class">12:00 - 14:00</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					<?php
+					if($course3 != ""){
+						echo'<td class="class">Cake Decorations</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					<td></td>
+
+				</tr><tr>
+					<td class="time">14:00</td>
+					<td></td>
+					<td></td>
+					<?php
+					if($course3 != ""){
+						echo'<td class="class">13:00 - 15:00</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					<td></td>
+
+				</tr><tr>
+					<td class="time">15:00</td>
+					<td></td>
+					<?php
+					if($course2 != ""){
+						echo'<td class="class">Bread Baking</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					<td></td>
+					<td></td>
+
+				</tr><tr>
+					<td class="time">16:00</td>
+					<td></td>
+					<?php
+					if($course2 != ""){
+						echo'<td class="class">15:00 - 17:00</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					<?php
+					if($course4 != ""){
+						echo'<td class="class">Cookies Baking</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+
+				</tr><tr>
+					<td class="time">17:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<?php
+					if($course4 != ""){
+						echo'<td class="class">16:00 - 18:00</td>';
+					}
+					else{
+						echo'<td></td>';
+					}
+					?>
+					<td></td>
+					
+				</tr><tr>
+					<td class="time">18:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			</center>
+		</div>
 
     <script>
 		let slideIndex = 1;
