@@ -208,7 +208,7 @@ include("headerUser.php");
 			width: auto;
 			padding: 16px;
 			margin-top: -22px;
-			color: black;
+			color: var(--text);
 			font-weight: bold;
 			font-size: 250%;
 			transition: 0.3s ease;
@@ -222,7 +222,7 @@ include("headerUser.php");
 		}
 
 		.prev:hover, .next:hover {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: var(--arrowHover);
 		}
 
 		.slidesContainer .selectionDot {
@@ -251,12 +251,12 @@ include("headerUser.php");
 			width: 100%;
 			opacity: 0;
 			transition: 0.5s ease;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: var(--overlay);
 			border-radius: 5px;
 		}
 
 		.slidesOverlay .slidesText {
-			color: black;
+			color: var(--text);
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -291,12 +291,12 @@ include("headerUser.php");
 
 			opacity: 0;
 			transition: 0.5s ease;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: var(--overlay);
 			border-radius: 5px;
 		}
 
 		.coursesOverlay .coursesText {
-			color: black;
+			color: var(--text);
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -362,18 +362,33 @@ include("headerUser.php");
 		}
 
 		.bodyTitle{
-			color: black;
+			color: var(--text);
 			text-align: center;
 			font-size: 300%;
 			font-family: andale mono, monospace;
 			font-weight: bold;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: var(--overlay);
 			margin-left: 25%;
 			margin-right: 25%;
 			padding-top: 2%;
 			padding-bottom: 2%;
 			border-radius: 5px;
 		}
+
+		.bodyTitleSmall{
+			color: var(--text);
+			text-align: center;
+			font-size: 200%;
+			font-family: andale mono, monospace;
+			font-weight: bold;
+			background-color: var(--overlay);
+			margin-left: 30%;
+			margin-right: 30%;
+			padding: 2%;
+			border-radius: 5px;
+			text-decoration: underline;
+		}
+		
 
 	</style>
 	
@@ -480,6 +495,10 @@ include("headerUser.php");
         if($course5 == ""){
             printCourse5Small();
         }
+
+		else{
+			echo'<h1 class="bodyTitleSmall">You Have Registered For All The Classes</h1>';
+		}
 
 		?>
 
