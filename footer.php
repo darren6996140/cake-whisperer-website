@@ -3,7 +3,6 @@
 <head>
 
 <style>
-	/* style whole footer */
 	.footer {
 		color: black;
 		background: rgba(235, 235, 235, 0.5);
@@ -15,40 +14,30 @@
 		transition: 0.5s;
 	}
 
-	/* style left portion of footer */
 	.footer .left {
 		text-align: left;
 		flex: 50%;
 	}
 
-	/* style right portion of footer */
 	.footer .right {
 		text-align: right;
 		flex: 50%;
 	}
 
-	/* style social links */
 	.footer .right .links {
 		width: 25px;
 		height: 25px;
 		padding-right: 10px;
 	}
 
-	/* style links */
 	.footer .right a {
 		color: rgba(0, 0, 0, 0);
 	}
 
-	/* style copyright info */
 	.footer .left p {
 		padding-left: 10px;
 		padding-top: 5px;
 	}
-
-	/* needs some help
-	.footer .right .links:hover{
-	background-color: rgba(0, 72, 106, 0.1);
-	} */
 
 </style>
 

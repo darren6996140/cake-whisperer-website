@@ -22,7 +22,6 @@
 			border-radius: 5px;
 		}
 
-		/* Next & previous buttons */
 		.prev, .next {
 			cursor: pointer;
 			position: absolute;
@@ -38,18 +37,15 @@
 			user-select: none;
 		}
 
-		/* Position the "next button" to the right */
 		.next {
 			right: 0;
 			border-radius: 3px 0 0 3px;
 		}
 
-		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover, .next:hover {
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 
-		/* The dots/bullets/indicators */
 		.slidesContainer .selectionDot {
 			cursor: pointer;
 			height: 15px;
@@ -61,8 +57,7 @@
 			transition: background-color 0.5s ease;
 		}
 
-		/* slight issue here */
-		.active, .selectionDot:hover {
+		.selectionDot:hover, .active{
 			background-color: rgb(113, 113, 113);
 		}
 
@@ -137,7 +132,6 @@
 			}
 		}
 
-		/* On smaller screens, decrease text size */
 		@media screen and (max-width: 850px) {
 			.prev, .next, .slidesContainer .slidesImg .slidesOverlay .slidesText{
 				font-size: 100%;

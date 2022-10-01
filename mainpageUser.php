@@ -201,7 +201,6 @@ include("headerUser.php");
 			border-radius: 5px;
 		}
 
-		/* Next & previous buttons */
 		.prev, .next {
 			cursor: pointer;
 			position: absolute;
@@ -217,18 +216,15 @@ include("headerUser.php");
 			user-select: none;
 		}
 
-		/* Position the "next button" to the right */
 		.next {
 			right: 0;
 			border-radius: 3px 0 0 3px;
 		}
 
-		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover, .next:hover {
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 
-		/* The dots/bullets/indicators */
 		.slidesContainer .selectionDot {
 			cursor: pointer;
 			height: 15px;
@@ -240,7 +236,6 @@ include("headerUser.php");
 			transition: background-color 0.5s ease;
 		}
 
-		/* slight issue here */
 		.active, .selectionDot:hover {
 			background-color: rgb(113, 113, 113);
 		}
@@ -330,7 +325,6 @@ include("headerUser.php");
 			}
 		}
 
-		/* On smaller screens, decrease text size */
 		@media screen and (max-width: 850px) {
 			.prev, .next, .slidesContainer .slidesImg .slidesOverlay .slidesText{
 				font-size: 100%;
