@@ -226,7 +226,7 @@ include("session.php");
 
 	<div class="courses">
 
-		<h1>Database Courses</h1>
+		<h1>Student's Registrations</h1>
 
 		<div class="coursesForm">
 			<center>
